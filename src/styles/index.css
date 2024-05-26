@@ -1,0 +1,27 @@
+:root {
+    --font-heading: "Silkscreen";
+}
+
+#logo {
+    font-family: var(--font-heading);
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: flex-end; */
+    align-items: baseline;
+}
+
+.intro-heading {
+    font-family: var(--font-heading);
+}
+
+#nav-items {
+    font-family:var(--font-heading);
+}
+
+.intro-text {
+    font-family: "Fira code";
+    text-align: center;
+}
