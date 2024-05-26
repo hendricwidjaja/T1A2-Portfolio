@@ -1,27 +1,73 @@
+/* Variables */
 :root {
     --font-heading: "Silkscreen";
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    justify-content: space-between;
 }
 
 #logo {
     font-family: var(--font-heading);
 }
 
+/* Styling for header section */
 .header-section {
     display: flex;
-    justify-content: space-around;
-    /* align-items: flex-end; */
+    justify-content: space-between;
+    align-items: flex-end;
     align-items: baseline;
-}
-
-.intro-heading {
-    font-family: var(--font-heading);
 }
 
 #nav-items {
     font-family:var(--font-heading);
 }
 
+/* Styling for introduction section */
+.intro-heading {
+    font-family: var(--font-heading);
+    font-size: 32px;
+}
+
 .intro-text {
     font-family: "Fira code";
     text-align: center;
+}
+
+/* Styling for Education & Experience section */
+.edu-timeline {
+    font-family: var(--font-heading);
+    /* font-size: 24px; */
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.edu-timeline img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding-left: 0px;
+    padding-top: 12px;
+    transform: rotate(-45deg);
+}
+
+/* Styling for footer section */
+footer {
+    padding: 16px;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.footer-text {
+    font-family: var(--font-heading);
 }
