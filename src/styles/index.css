@@ -1,71 +1,119 @@
 /* Variables */
 :root {
-    --font-heading: "Silkscreen";
+    --font-heading: "Lacquer";
+    --font-secondary: "Fira Code";
+    --main-background: linear-gradient(rgba(255, 255, 255, 0.354), #c6c6c6)
 }
 
 body {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     min-height: 100dvh;
     justify-content: space-between;
-}
-
-#logo {
-    font-family: var(--font-heading);
+    margin: 0px;
 }
 
 /* Styling for header section */
-.header-section {
+
+#logo {
+    padding: 24px;
+}
+
+#logo a {
+    font-family: var(--font-heading);
+    display: inline-block;
+    color: black;
+    font-size: 3rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#logo a:hover {
+    transform: scale(1.25);
+    text-shadow: 0 0 10px black;
+}
+
+header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    align-items: baseline;
+    align-items: center;
 }
 
 #nav-items {
     font-family:var(--font-heading);
-}
-
-/* Styling for introduction section */
-.intro-heading {
-    font-family: var(--font-heading);
-    font-size: 32px;
-}
-
-.intro-text {
-    font-family: "Fira code";
-    text-align: center;
-}
-
-/* Styling for Education & Experience section */
-.edu-timeline {
-    font-family: var(--font-heading);
-    /* font-size: 24px; */
     display: flex;
-    justify-content: center;
-    align-items: baseline;
-    gap: 5px;
+    gap: 20px;
+    padding: 24px;
 }
 
-.edu-timeline img {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    padding-left: 0px;
-    padding-top: 12px;
-    transform: rotate(-45deg);
+#nav-items a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-size: 1.2rem;
+}
+
+#nav-items a:hover {
+    transform: scale(1.25);
+    text-shadow: 0 0 10px black;
+}
+
+/* Styling for background of header & main sections */
+.page-background {
+    background-image: var(--main-background);
 }
 
 /* Styling for footer section */
 footer {
-    padding: 16px;
+    background-color: white;
+    padding: 32px 16px 16px 16px;
     text-align: center;
+}
+
+#footer-logo a {
+    font-family: var(--font-heading);
+    display: inline-block;
+    color: black;
+    font-size: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#footer-logo a:hover {
+    transform: scale(1.25);
+    text-shadow: 0 0 10px black;
+}
+
+.footer-text {
+    margin-bottom: 24px;
 }
 
 .social-media {
     display: flex;
     justify-content: center;
     gap: 3rem;
+    margin-bottom: 24px;
+}
+
+.social-media i {
+    font-size: 24px;
+    color: black;
+    background-color: white;
+    border: 5px solid black;
+    padding: 8px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.social-media i:hover {
+    transform: scale(1.25);
+    box-shadow: 0 0 25px black;
 }
 
 .footer-text {

@@ -5,75 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hendric Widjaja | Web Developer</title>
 
-    <!-- Link source for 3x google fonts (Fira Code / Silkscreen / Caveat) -->
+    <!-- Link source for 4x google fonts (Fira Code / Laquer / Silkscreen / Caveat) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fira+Code:wght@300..700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fira+Code:wght@300..700&family=Lacquer&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Link index.html to external stylesheet (index.css) -->
+    <!-- Link index.html to external stylesheets (index.css) -->
     <link rel="stylesheet" href="./styles/index.css">
+    <!-- <link rel="stylesheet" href="./styles/hometest.css"> -->
+    <link rel="stylesheet" href="./styles/home.css">
 
     <!-- Link source for Font Awesome icons  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
-    <header>
-        <div class="header-section">
+    <div class="page-background">
+        <header>
             <div id="logo">
-                <a href="#">
-                    <h1>:)</h1>
-                </a>
+                <a href="#">:)</a>
             </div>
             <nav id="nav-items">
                 <a href ="#">Home</a>
-                <a href ="">About</a>
-                <a href ="">Projects</a>
-                <a href ="">Contact</a>
+                <a href ="./pages/about.html">About</a>
+                <a href ="./pages/projects.html">Projects</a>
+                <a href ="./pages/contact.html">Contact</a>
             </nav>
-        </div>
-    </header>
-    <main>
-        <div class="intro-heading">
-            <h1>Hi,</h1>
-            <h1>my name</h1>
-            <h1>is Hendric</h1>
-        </div>
-        <article class="intro-text">
-            <p>
-                I'm a current student at Coder Academy. Previously a cost planner in the construction industry. This is a glance at my software development journey so far. If you're interested in working together, have a some feedback (or just wante to say hello) please feel free to follow me on my socials or get in touch via the links in the footer :)
-            </p>
-        </article>
-        <section class="edu-timeline">
-            <h3>
-                Education & Experience
-            </h3>
-            <img src="./images/edu-exp-icon.svg" alt="Icon representing a pair of grey glasses">
-        </section>
-    </main>
-    <footer>
-            <div id="logo">
-                <a href="#">
-                    <h1>:)</h1>
-                </a>
+        </header>
+        <main>
+            <div class="intro-heading">
+                    <h1>Hi,</h1>
+                    <h1>my name</h1>
+                    <h1>is Hendric</h1>
+            </div>
+            <article class="intro-text">
+                <p>
+                    I'm a current student at Coder Academy. Previously a cost planner in the construction industry. This is a glance at my software development journey so far. If you're interested in working together, have a some feedback (or just wanted to say hello) please feel free to follow me on my socials or get in touch via the links in the footer :)
+                </p>
+            </article>
+            <section class="education-experience">
+                <section class="education-main-heading">
+                    <h2>
+                        Education & Experience
+                    </h2>
+                    <img src="./images/edu-exp-icon.svg" alt="Icon representing a pair of grey glasses">
+                </section>
+                <div class="accordion">
+                    <div>
+                        <input type="checkbox" name="education-accordion" id="Work-Experience" class="accordion__input">
+                        <label for="Work-Experience" class="accordion__label">Work Experience</label>
+                        <div class="accordion__content" id="work-exp-background">
+                            <div class="frasers-heading">
+                                <img src="./images/fpa-logo.png" alt="Frasers Property Australia Logo">
+                                <h1>Frasers Property Australia</h1>
+                            </div>
+                                <div class="frasers-roles">
+                                    <div class="frasers-role">
+                                        <h3>Customer Service Coordinator</h3>
+                                        <p>2024 - current</p>
+                                    </div>
+                                    <div class="frasers-role">
+                                        <h3>Cost Planning Assistant</h3>
+                                        <p>2022 - 2024</p>
+                                    </div>
+                                    <div class="frasers-role">
+                                        <h3>Customer Service Coordinator</h3>
+                                        <p>2021 - 2022</p>
+                                    </div>
+                                    <div class="frasers-role">
+                                        <h3>Contract Administrator</h3>
+                                        <p>2019 - 2020</p>
+                                    </div>
+                                    <div class="frasers-role">
+                                        <h3>Cadet</h3>
+                                        <p>2018 - 2019</p>
+                                    </div>
+                                    <div class="frasers-role">
+                                        <h3>Customer Service Coordinator</h3>
+                                        <p>2017 - 2018</p>
+                                    </div>
+                                </div>
+                        </div>
+                    <div>
+                    <div>
+                        <input type="checkbox" name="education-accordion" id="Education" class="accordion__input">
+                        <label for="Education" class="accordion__label">Education</label>
+                        <div class="accordion__content" id="education-background">
+                            <div class="education-heading">
+                                <div class="coder-academy-section">
+                                    <img src="./images/coder-academy-logo.png" alt="Coder Academy Logo">
+                                    <h1>Coder Academy</h1>
+                                </div>
+                                <div class="education-role">
+                                    <h3>Diploma of Sofware Development</h3>
+                                    <p>2024 - current</p>
+                                </div>
+                            </div>
+                            <div class="education-heading">
+                                <div class="unsw-section">
+                                    <img src="./images/unsw-logo.png" alt="University of New South Wales Logo">
+                                    <h1>University of New South Wales</h1>
+                                </div>
+                                <div class="education-role">
+                                    <h3>Bachelor of Construction Management & Property</h3>
+                                    <p>2015 - 2019</p>
+                                </div>
+                            </div>
+                        <div>
+                </div>
+            </section>
+            <div class="buttons">
+                <div class="btn-div">
+                    <button id="cv">Download my CV</button>
+                </div>
+                <div class="btn-div">
+                    <a href="./pages/about.html">
+                        <button id="about-btn-div">Learn More About Me</button>
+                    </a>
+                </div>
+            </div>
+            <form>
+                <div class="lets-work-heading">
+                    <h1>Let's Work Together</h1>
+                    <img src="./images/work-together-icon.svg" alt="Handshake icon">
+                </div>
+                <div class="form-elements">
+                    <label>Name:</label>
+                    <input type="text" class="form-input">
+                </div>
+                <div class="form-elements">
+                    <label>Email:</label>
+                    <input type="text" class="form-input">
+                </div>
+                <div class="form-elements">
+                    <label>Message:</label>
+                    <textarea rows=7 class="form-input form-textarea"></textarea>
+                </div>
+                <div class="form-elements">
+                        <button id="submit-message">Submit</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div id="footer-logo">
+                <a href="#">:)</a>
             </div>
             <section class="footer-text">
                 <p>LEARN W/ ME</p>
             </section>
             <div class="social-media">
-                <a href="https://www.linkedin.com" target="_blank">
+                <a href="https://github.com/hendricwidjaja" target="_blank">
                     <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com" target="_blank">
+                <a href="https://www.linkedin.com/in/hendric-widjaja/" target="_blank">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-                <a href="https://www.linkedin.com" target="_blank">
+                <a href="mailto:hcwidjaja@gmail.com" target="_blank">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
             </div>
             <div class="footer-text">
                 <p>&copy; HENDRIC WIDJAJA | ALL RIGHTS RESERVED</p>
             </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>

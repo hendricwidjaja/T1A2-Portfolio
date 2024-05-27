@@ -1,0 +1,334 @@
+/* Styling for introduction section */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.intro-heading {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+@media screen and (min-width: 699px) {
+    .intro-heading {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+}
+
+.intro-text {
+    font-family: var(--font-secondary);
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.intro-text p {
+    max-width: 800px;
+}
+
+.education-experience {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.education-main-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    justify-content: center;
+}
+
+@media screen and (max-width: 490px) {
+    .education-heading {
+        justify-content: flex-end;
+    }
+}
+
+.education-main-heading img {
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    transform: rotate(-45deg);
+}
+
+/* Interactive Accordion Styling to Education & Experience section */
+.accordion {
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.33);
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: var(--font-heading);
+    background: black;
+}
+
+.accordion__label {
+    padding: 14px 20px;
+}
+
+.accordion__content {
+    padding: 14px 20px;
+}
+
+.accordion__label {
+    display: block;
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.5s;
+}
+
+.accordion__label:hover {
+    background: rgba(255, 255, 255, 0.88);
+    color: black;
+}
+
+/* Styling for Triangle animation to indicate checked/not checked */
+.accordion__label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+    background-size: contain;
+    transition: transform 0.4s;
+}
+
+/* Animation for triangle to turn 180 degrees */
+.accordion__input:checked ~ .accordion__label::after {
+    transform: rotate(0.5turn);
+}
+
+.frasers-heading {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.frasers-heading img {
+    width: 48px;
+    height: 48px;
+}
+
+/* Flexbox layout for Frasers Property Australia Work Experience Card */
+.frasers-roles {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.frasers-role {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.811);
+    border-radius: 20px;
+    padding: 0px 16px;
+    border: 4px solid black;
+    font-size: 20px;
+}
+
+.coder-academy-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.unsw-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.education-heading {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.92);
+    margin: 10px;
+    border-radius: 20px;
+    padding: 16px;
+    border: 4px solid black;
+}
+
+.education-role {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.education-heading img {
+    width: 48px;
+    height: 48px;
+}
+
+.accordion__content {
+    background: white;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+}
+
+/* Hides checkbox from being seen by user */
+.accordion__input {
+    display: none;
+
+}
+
+/* When accordion__input is checked, the following sibling named .accordion__content will be displayed */
+.accordion__input:checked ~ .accordion__content {
+    display: block;
+}
+
+#work-exp-background {
+    background-image: url(../images/fpa-bg1-unsplash.jpg);
+    background-size: 800px;
+    background-repeat: none;
+}
+
+#education-background {
+    background-image: url(../images/unsw-bg2-unsplash.jpg);
+    background-size: 800px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+    gap: 32px;
+}
+
+#cv {
+    height: 40px;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: var(--font-heading);
+    width: 293.5px;
+    transition: 0.2s ease-in-out;
+}
+
+#cv:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+    box-shadow: 0 0 25px black;
+}
+
+#about-btn-div {
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: var(--font-heading);
+    width: 293.5px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23fff'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 24px center;
+    transition: 0.2s ease-in-out;
+}
+
+#about-btn-div:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+    box-shadow: 0 0 25px black;
+}
+
+.lets-work-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    justify-content: center;
+}
+
+.lets-work-heading img {
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 24px;
+    font-family: var(--font-heading);
+    gap: 8px;
+}
+
+.form-elements {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.form-elements label {
+    padding: 8px;
+    font-size: 1.5rem;
+}
+
+.form-input {
+    width: 360px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 14px;
+    outline: none;
+    font-size: 1.2rem;
+    font-family: var(--font-secondary);
+    background-image: url(../images/message-bg-unsplash.jpg);
+    background-size: 900px;
+}
+
+/* Resizes width of form inputs to suit larger screens beyond 699px */
+@media screen and (min-width: 699px) {
+    .form-input {
+        width: 60dvw;
+        max-width: 776px;
+    }
+}
+
+.form-input:focus {
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.592);
+}
+
+.form-textarea {
+    resize: none;
+}
+
+#submit-message {
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: var(--font-heading);
+    width: 293.5px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23fff'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 24px center;
+    transition: 0.2s ease-in-out;
+}
+
+#submit-message:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+    box-shadow: 0 0 25px black;
+}
