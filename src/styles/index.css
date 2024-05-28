@@ -58,7 +58,11 @@ header {
 
 #nav-items a:hover {
     transform: scale(1.25);
-    text-shadow: 0 0 16px black;
+    text-shadow: 0 0 16px rgba(0, 0, 0, 0.385);
+}
+
+#nav-items a.active {
+    text-decoration: underline;
 }
 
 /* Styling for background of header & main sections */

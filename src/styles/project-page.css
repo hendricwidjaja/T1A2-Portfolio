@@ -1,0 +1,8 @@
+.project-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    justify-content: center;
+}
