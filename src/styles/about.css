@@ -1,0 +1,14 @@
+.lets-work-heading {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    justify-content: center;
+}
+
+.lets-work-heading img {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+}

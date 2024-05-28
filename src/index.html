@@ -12,7 +12,6 @@
 
     <!-- Link index.html to external stylesheets (index.css) -->
     <link rel="stylesheet" href="./styles/index.css">
-    <!-- <link rel="stylesheet" href="./styles/hometest.css"> -->
     <link rel="stylesheet" href="./styles/home.css">
 
     <!-- Link source for Font Awesome icons  -->
@@ -33,6 +32,9 @@
             </nav>
         </header>
         <main>
+            <div class="profile">
+                <img src="./images/profile-picture2.jpg" alt="Profile Picture">
+            </div>
             <div class="intro-heading">
                     <h1>Hi,</h1>
                     <h1>my name</h1>
@@ -40,7 +42,7 @@
             </div>
             <article class="intro-text">
                 <p>
-                    I'm a current student at Coder Academy. Previously a cost planner in the construction industry. This is a glance at my software development journey so far. If you're interested in working together, have a some feedback (or just wanted to say hello) please feel free to follow me on my socials or get in touch via the links in the footer :)
+                    I'm a current student at Coder Academy. Previously a cost planner in the construction industry. This is a glance at my software development journey so far. If you're interested in working together, have some feedback (or just wanted to say hello) please feel free to follow me on my socials or get in touch via the links in the footer :)
                 </p>
             </article>
             <section class="education-experience">
@@ -130,16 +132,16 @@
                     <img src="./images/work-together-icon.svg" alt="Handshake icon">
                 </div>
                 <div class="form-elements">
-                    <label>Name:</label>
-                    <input type="text" class="form-input">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" class="form-input" autocomplete="on">
                 </div>
                 <div class="form-elements">
-                    <label>Email:</label>
-                    <input type="text" class="form-input">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" class="form-input" autocomplete="on">
                 </div>
                 <div class="form-elements">
-                    <label>Message:</label>
-                    <textarea rows=7 class="form-input form-textarea"></textarea>
+                    <label for="message">Message:</label>
+                    <textarea rows=7 id="message" class="form-input form-textarea"></textarea>
                 </div>
                 <div class="form-elements">
                         <button id="submit-message">Submit</button>
@@ -154,13 +156,13 @@
                 <p>LEARN W/ ME</p>
             </section>
             <div class="social-media">
-                <a href="https://github.com/hendricwidjaja" target="_blank">
+                <a href="https://github.com/hendricwidjaja" aria-label="Link to Hendric Widjaja's Github Profile" target="_blank" >
                     <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/hendric-widjaja/" target="_blank">
+                <a href="https://www.linkedin.com/in/hendric-widjaja/" aria-label="Link to Hendric Widjaja's Linkedin Profile" target="_blank">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-                <a href="mailto:hcwidjaja@gmail.com" target="_blank">
+                <a href="mailto:hcwidjaja@gmail.com" aria-label="Compose a new email to Hendric Widjaja" target="_blank">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
             </div>

@@ -12,8 +12,7 @@
 
     <!-- Link index.html to external stylesheets (index.css) -->
     <link rel="stylesheet" href="../styles/index.css">
-    <!-- <link rel="stylesheet" href="./styles/hometest.css"> -->
-    <link rel="stylesheet" href="./styles/projects.css">
+    <link rel="stylesheet" href="../styles/projects.css">
 
     <!-- Link source for Font Awesome icons  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,21 +20,79 @@
 </head>
 <body>
     <div class="page-background">
-    <header>
-        <div id="logo">
-            <a href="../index.html">:)</a>
-        </div>
-        <nav id="nav-items">
-            <a href ="../index.html">Home</a>
-            <a href ="./about.html">About</a>
-            <a href ="#">Projects</a>
-            <a href ="./contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <h1>Projects</h1>
-    </main>
-    <footer>
+        <header>
+            <div id="logo">
+                <a href="../index.html">:)</a>
+            </div>
+            <nav id="nav-items">
+                <a href ="../index.html">Home</a>
+                <a href ="./about.html">About</a>
+                <a href ="#">Projects</a>
+                <a href ="./contact.html">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <section class="main-flexbox">
+                <div class="lets-work-heading">
+                    <h1>Projects</h1>
+                    <img src="../images/projects-icon.svg" alt="Tools Icon">
+                </div>
+                <section class="flexbox-projects">
+                    <article class="project-item">
+                        <h2>Portfolio</h2>
+                        <div class="project-tile">
+                            <img class="tile-img" src="../images/portfolio-project-unsplash-360w.jpg" alt="Photo of laptop with portfolio website on screen">
+                            <div class="image__overlay image__overlay--blur">
+                                <div class="image__title">Portfolio</div>
+                                <p class="image__description">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde commodi assumenda consequatur molestias neque, praesentium blanditiis sapiente, modi nemo reprehenderit dolor nam consectetur quibusdam perspiciatis cum! Debitis corrupti dolores porro dolore exercitationem ...
+                                </p>
+                                <p class="click-more-animation">
+                                    Click for more
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <h2>Terminal Application</h2>
+                        <div class="project-tile">
+                            <img class="tile-img" src="../images/terminal-image-unsplash-360w.jpg" alt="Photo of laptop with terminal on screen">
+                            <div class="image__overlay image__overlay--blur">
+                                <div class="image__title">Terminal Application</div>
+                                <p class="image__description">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde commodi assumenda consequatur molestias neque, praesentium blanditiis sapiente, modi nemo reprehenderit dolor nam consectetur quibusdam perspiciatis cum! Debitis corrupti dolores porro dolore exercitationem ...
+                                </p>
+                                <p class="click-more-animation">
+                                    Click for more
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <h2>Full Stack Web Application</h2>
+                        <div class="project-tile">
+                            <img class="tile-img" src="../images/full-stack-webapplication-unsplash-360w.jpg" alt="Photo of iphone displaying application">
+                            <div class="image__overlay image__overlay--blur">
+                                <div class="image__title">Full Stack Web Application</div>
+                                <p class="image__description">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde commodi assumenda consequatur molestias neque, praesentium blanditiis sapiente, modi nemo reprehenderit dolor nam consectetur quibusdam perspiciatis cum! Debitis corrupti dolores porro dolore exercitationem ...
+                                </p>
+                                <p class="click-more-animation">
+                                    Click for more
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    
+                </section>
+                <div class="btn-div">
+                    <a href="./contact.html">
+                        <button id="contact-btn-div">Contact me</button>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer>
             <div id="footer-logo">
                 <a href="../index.html">:)</a>
             </div>
@@ -43,13 +100,13 @@
                 <p>LEARN W/ ME</p>
             </section>
             <div class="social-media">
-                <a href="https://github.com/hendricwidjaja" target="_blank">
+                <a href="https://github.com/hendricwidjaja" aria-label="Link to Hendric Widjaja's Github Profile" target="_blank" >
                     <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/hendric-widjaja/" target="_blank">
+                <a href="https://www.linkedin.com/in/hendric-widjaja/" aria-label="Link to Hendric Widjaja's Linkedin Profile" target="_blank">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-                <a href="mailto:hcwidjaja@gmail.com" target="_blank">
+                <a href="mailto:hcwidjaja@gmail.com" aria-label="Compose a new email to Hendric Widjaja" target="_blank">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
             </div>

@@ -1,4 +1,4 @@
-/* Styling for introduction section */
+/* Centred Layout for main section using flex box */
 main {
     display: flex;
     flex-direction: column;
@@ -6,11 +6,54 @@ main {
     margin-bottom: 40px;
 }
 
+/* Styling for Profile picture with responsiveness */
+.profile img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid black;
+    margin-left: 24px;
+    transition: 0.7s ease-in-out;
+}
+
+@media screen and (min-width: 699px) {
+    .profile {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+    }
+    .profile img {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+.profile img:hover {
+    transform: scale(1.25);
+}
+
 .intro-heading {
     font-family: var(--font-heading);
-    font-size: 32px;
+    font-size: 30px;
     padding-left: 24px;
     padding-right: 24px;
+}
+
+.intro-heading h1 {
+    transition: 0.7s ease-in-out;
+}
+
+.intro-heading h1:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 698px) {
+    .intro-heading h1:hover {
+        transform: translate(20px);
+    }
+    .profile img:hover {
+        transform: translate(20px);
+    }
 }
 
 @media screen and (min-width: 699px) {
@@ -137,6 +180,8 @@ main {
     justify-content: space-between;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.811);
+    /* background-color: transparent;
+    backdrop-filter: blur(40px); */
     border-radius: 20px;
     padding: 0px 16px;
     border: 4px solid black;

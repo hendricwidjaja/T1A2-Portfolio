@@ -12,7 +12,6 @@
 
     <!-- Link index.html to external stylesheets (index.css) -->
     <link rel="stylesheet" href="../styles/index.css">
-    <!-- <link rel="stylesheet" href="./styles/hometest.css"> -->
     <link rel="stylesheet" href="../styles/contact.css">
 
     <!-- Link source for Font Awesome icons  -->
@@ -39,16 +38,16 @@
                 <img src="../images/get-in-touch-icon.svg" alt="Pointer Icon">
             </div>
             <div class="form-elements">
-                <label>Name:</label>
-                <input type="text" class="form-input">
+                <label for="name">Name:</label>
+                <input type="text" id="name" class="form-input" autocomplete="on">
             </div>
             <div class="form-elements">
-                <label>Email:</label>
-                <input type="text" class="form-input">
+                <label for="email">Email:</label>
+                <input type="text" id="email" class="form-input" autocomplete="on">
             </div>
             <div class="form-elements">
-                <label>Message:</label>
-                <textarea rows=15 class="form-input form-textarea"></textarea>
+                <label for="message">Message:</label>
+                <textarea rows=15 id="message" class="form-input form-textarea"></textarea>
             </div>
             <div class="form-elements">
                     <button id="submit-message">Submit</button>
@@ -63,13 +62,13 @@
                 <p>LEARN W/ ME</p>
             </section>
             <div class="social-media">
-                <a href="https://github.com/hendricwidjaja" target="_blank">
+                <a href="https://github.com/hendricwidjaja" aria-label="Link to Hendric Widjaja's Github Profile" target="_blank" >
                     <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/hendric-widjaja/" target="_blank">
+                <a href="https://www.linkedin.com/in/hendric-widjaja/" aria-label="Link to Hendric Widjaja's Linkedin Profile" target="_blank">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-                <a href="mailto:hcwidjaja@gmail.com" target="_blank">
+                <a href="mailto:hcwidjaja@gmail.com" aria-label="Compose a new email to Hendric Widjaja" target="_blank">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
             </div>
