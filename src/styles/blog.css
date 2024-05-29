@@ -1,0 +1,77 @@
+.blog-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+}
+
+/* Targets all children of .blog heading. Minimising gap between title and date */
+.blog-heading > * {
+    margin: 10px;
+}
+
+/* Adjusting date of blog to be smaller in size than title */
+.blog-date {
+    font-size: 20px;
+}
+
+.blog-content {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.blog-text {
+    padding: 24px;
+    text-align: center;
+    font-family: var(--font-heading);
+}
+
+#cv {
+    height: 40px;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: var(--font-heading);
+    width: 293.5px;
+    transition: 0.2s ease-in-out;
+}
+
+#cv:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+    box-shadow: 0 0 25px black;
+}
+
+#about-btn-div {
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: var(--font-heading);
+    width: 293.5px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23fff'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 24px center;
+    transition: 0.2s ease-in-out;
+}
+
+#about-btn-div:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+    box-shadow: 0 0 25px black;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+    gap: 32px;
+}
+
