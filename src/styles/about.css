@@ -216,7 +216,7 @@
 .play-btn {
     width: 75px;
     height: 75px;
-    margin: 0px 16px;
+    margin: 3px 16px 0px 0px;
 }
 
 @media screen and (max-width: 775px) {
