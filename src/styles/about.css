@@ -13,6 +13,12 @@
     height: 3rem;
 }
 
+@media screen and (max-width: 440px) {
+    .about-heading {
+        font-size: 1.2rem;
+    }
+}
+
 /* Provide layout of expertise tiles using flexbox. Max width 800 to prevent tiles from creating more than 2 columns. Margin auto to keep tiles center of page */
 .tech-stack {
     display: flex;
@@ -20,6 +26,7 @@
     justify-content: center;
     max-width: 800px;
     margin: auto;
+    padding: 16px;
     gap: 16px;
 }
 
@@ -32,6 +39,24 @@
     background-color: rgb(255, 255, 255);
     border: 2px solid black;
     border-radius: 16px;
+}
+
+@media screen and (max-width: 775px) {
+    .expertise-tile {
+        width: 80vw;
+    }
+    #frontend-bg {
+        background-size: 100%;
+    }
+    #backend-bg {
+        background-size: 100%;
+    }
+    #database-bg {
+        background-size: 100%;
+    }
+    #tools-bg {
+        background-size: 100%;
+    }
 }
 
 /* Give heading font, background transparent with blur effect. Also align text to center*/
@@ -96,6 +121,7 @@
     margin: 24px;
     max-width: 800px;
     margin: auto;
+    padding: 16px;
 }
 
 .blog-tile {
@@ -109,6 +135,12 @@
     height: 100px;
     font-family: var(--font-heading);
     overflow: hidden;
+}
+
+@media screen and (max-width: 775px) {
+    .blog-tile {
+        width: 80vw;
+    }
 }
 
 .blog-collection a {
@@ -163,7 +195,7 @@
 
 .playlist-item {
     background-color: white;
-    width: 800px;
+    width: 740px;
     margin: auto;
     border: 2px solid black;
     border-radius: 16px;
@@ -185,4 +217,10 @@
     width: 75px;
     height: 75px;
     margin: 0px 16px;
+}
+
+@media screen and (max-width: 775px) {
+    .playlist-item {
+        width: 80vw;
+    }
 }
