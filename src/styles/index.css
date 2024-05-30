@@ -27,7 +27,7 @@ body {
     font-size: 3rem;
     text-decoration: none;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 #logo a:hover {
@@ -52,12 +52,12 @@ header {
     text-decoration: none;
     color: black;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
     font-size: 1.2rem;
 }
 
 #nav-items a:hover {
-    transform: scale(1.25);
+    transform: scale(1.1);
     text-shadow: 0 0 16px rgba(0, 0, 0, 0.385);
 }
 
@@ -84,11 +84,11 @@ footer {
     font-size: 2rem;
     text-decoration: none;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 #footer-logo a:hover {
-    transform: scale(1.25);
+    transform: scale(1.1);
     text-shadow: 0 0 16px black;
 }
 
@@ -112,12 +112,12 @@ footer {
     border-radius: 50%;
     box-shadow: 0 0 10px black;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 .social-media i:hover {
-    transform: scale(1.25);
-    box-shadow: 0 0 25px black;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.452);
 }
 
 .footer-text {

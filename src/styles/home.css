@@ -13,7 +13,7 @@ main {
     border-radius: 50%;
     border: 5px solid black;
     margin-left: 24px;
-    transition: 0.7s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 @media screen and (min-width: 699px) {
@@ -40,11 +40,11 @@ main {
 }
 
 .intro-heading h1 {
-    transition: 0.7s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .intro-heading h1:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 698px) {
@@ -163,6 +163,24 @@ main {
     gap: 24px;
 }
 
+.accordion__content a {
+    color: black;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.frasers-heading a:hover {
+    transform: scale(1.1);
+}
+
+.coder-academy-section a:hover {
+    transform: scale(1.1);
+}
+
+.unsw-section a:hover {
+    transform: scale(1.1);
+}
+
 .frasers-heading img {
     width: 48px;
     height: 48px;
@@ -266,13 +284,13 @@ main {
     font-size: 16px;
     font-family: var(--font-heading);
     width: 293.5px;
-    transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 #cv:hover {
     cursor: pointer;
-    transform: scale(1.08);
-    box-shadow: 0 0 25px black;
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.519);
 }
 
 #about-btn-div {
@@ -286,13 +304,13 @@ main {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23fff'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 24px center;
-    transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 #about-btn-div:hover {
     cursor: pointer;
-    transform: scale(1.08);
-    box-shadow: 0 0 25px black;
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.563);
 }
 
 .lets-work-heading {
@@ -338,7 +356,7 @@ form {
     outline: none;
     font-size: 1.2rem;
     font-family: var(--font-secondary);
-    background-image: url(../images/message-bg-unsplash.jpg);
+    /* background-image: url(../images/message-bg-unsplash.jpg); */
     background-size: 900px;
 }
 
@@ -351,7 +369,7 @@ form {
 }
 
 .form-input:focus {
-    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.592);
+    box-shadow: inset 0px 0px 10px 0px rgba(192, 192, 192, 0.592);
 }
 
 .form-textarea {
@@ -369,11 +387,11 @@ form {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23fff'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 24px center;
-    transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 #submit-message:hover {
     cursor: pointer;
-    transform: scale(1.08);
-    box-shadow: 0 0 25px black;
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.485);
 }

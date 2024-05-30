@@ -1,8 +1,92 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .project-heading {
     display: flex;
-    align-items: center;
-    gap: 8px;
+    flex-direction: column;
     font-family: var(--font-heading);
     font-size: 2rem;
+    margin: 0px 24px;
+}
+
+.project-content {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.project-text {
+    padding: 24px;
+    text-align: center;
+    font-family: var(--font-heading);
+}
+
+#prev-btn-div {
+    height: 40px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: var(--font-heading);
+    width: 293.5px;
+    transition: 0.1s ease-in-out;
+}
+
+#prev-btn-div:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.484);
+}
+
+#next-btn-div {
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: var(--font-heading);
+    width: 293.5px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23fff'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 24px center;
+    transition: 0.1s ease-in-out;
+}
+
+#next-btn-div:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.429);
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    padding: 40px;
+    gap: 32px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .project-content {
+        max-width: 84dvw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .project-heading {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 558px) {
+    .project-heading {
+        align-items: center;
+    }
 }
