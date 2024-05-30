@@ -12,15 +12,18 @@
 
     <!-- Link index.html to external stylesheets (index.css) -->
     <link rel="stylesheet" href="../styles/index.css">
-    <!-- <link rel="stylesheet" href="./styles/hometest.css"> -->
     <link rel="stylesheet" href="../styles/about.css">
 
     <!-- Link source for Font Awesome icons  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="icon" href="../images/face-laugh-beam-solid.svg">
+
 </head>
 <body>
+<!-- Div to apply background to header and main section only -->
     <div class="page-background">
+<!-- Logo and nav section -->
     <header>
         <div id="logo">
             <a href="../index.html">:)</a>
@@ -33,12 +36,13 @@
         </nav>
     </header>
     <main>
+<!-- Expertise Section -->
         <div class="about-heading">
             <h1>Expertise</h1>
             <img src="../images/expertise-icon.svg" alt="Briefcase Icon">
         </div>
         <section class="tech-stack">
-            <article class="expertise-tile">
+            <article class="expertise-tile" id="frontend-bg">
                 <h1 class="expertise-heading">
                     Frontend
                 </h1>
@@ -49,8 +53,8 @@
                     <img src="../images/react-icon.webp">
                 </div>
             </article>
-            <article class="expertise-tile">
-                <h1>
+            <article class="expertise-tile" id="backend-bg">
+                <h1 class="expertise-heading">
                     Backend
                 </h1>
                 <div class="tech-stack-icons">
@@ -60,8 +64,8 @@
                     <img src="../images/express-icon.svg">
                 </div>
             </article>
-            <article class="expertise-tile">
-                <h1>
+            <article class="expertise-tile" id="database-bg">
+                <h1 class="expertise-heading">
                     Databases
                 </h1>
                 <div class="tech-stack-icons">
@@ -69,9 +73,9 @@
                     <img src="../images/mongodb-icon.webp">
                 </div>
             </article>
-            <article class="expertise-tile">
-                <h1>
-                    Version Control / Deployment / Tools
+            <article class="expertise-tile" id="tools-bg">
+                <h1 class="expertise-heading">
+                    Control / Deployment / Tools
                 </h1>
                 <div class="tech-stack-icons">
                     <img src="../images/git-red-icon.webp">
@@ -80,9 +84,8 @@
                     <img src="../images/visual-studio-code-icon.webp">
                 </div>
             </article>
-
         </section>
-
+<!-- Blogs Section -->
         <div class="about-heading">
             <h1>Blogs</h1>
             <img src="../images/blogs-icon.svg" alt="Open Book Icon">
@@ -134,11 +137,45 @@
                 </article>
             </a>
         </div>
+<!-- Playlist Section -->
         <div class="about-heading">
             <h1>Playlist</h1>
             <img src="../images/playlist-icon.svg" alt="Play Button Icon">
         </div>
+        <section class="playlist">
+            <article class="playlist-item">
+                <div class="song-text">
+                    <h2>ten</h2>
+                    <p>Single</p>
+                    <p>FredAgain..., Jozzy, Jim Legxacy</p>
+                </div>
+                <a href="https://open.spotify.com/track/5QOBT97OmYCZo1W5u7tRrB?si=398eca6b8a4d4785" target="_blank" aria-label="Link to ten by FredAgain..., Jozzy & Jim Legxacy">
+                    <img class="play-btn" src="../images/circle-play-solid.svg" alt="play button">
+                </a>
+            </article>
+            <article class="playlist-item">
+                    <div class="song-text">
+                        <h2>DNA (Loving You)</h2>
+                        <p>Single</p>
+                        <p>Billy Gillies ft. Hannah Boleyn</p>
+                    </div>
+                    <a href="https://open.spotify.com/track/6ibDVMcMUNqZ5eXT9sD4Vy?si=2423f681a8f14da6" target="_blank" aria-label="Link to DNA (Loving You) by Billy Gillies ft. Hannah Boleyn">
+                        <img class="play-btn" src="../images/circle-play-solid.svg" alt="play button">
+                    </a>
+            </article>
+            <article class="playlist-item">
+                <div class="song-text">
+                    <h2>Yellow</h2>
+                    <p>Single</p>
+                    <p>Lofi Fruits Music, Chill Fruits Music</p>
+                </div>                  
+                <a href="https://open.spotify.com/track/3S9kCBYnWg7jSSV1XAYL6Q?si=00eb6874422e4622" target="_blank" aria-label="Link to Yellow by Lofi Fruits Music & Chill Fruits Music">
+                    <img class="play-btn" src="../images/circle-play-solid.svg" alt="play button">
+                </a>
+            </article>
+        </section>
     </main>
+<!-- Footer Section -->
     <footer>
         <div id="footer-logo">
             <a href="../index.html">:)</a>

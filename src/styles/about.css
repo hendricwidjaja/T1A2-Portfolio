@@ -13,8 +13,78 @@
     height: 3rem;
 }
 
+/* Provide layout of expertise tiles using flexbox. Max width 800 to prevent tiles from creating more than 2 columns. Margin auto to keep tiles center of page */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+    gap: 16px;
+}
+
+/* Provide layout to content within expertise tile and general tile styling */
+.expertise-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 16px;
+}
+
+/* Give heading font, background transparent with blur effect. Also align text to center*/
+.expertise-heading {
+    font-family: var(--font-heading);
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid black;
+    border-radius: 16px;
+    padding: 4px 16px;
+    min-width: 150px;
+    text-align: center;
+}
+
+/* Give icons background color & border and positioning to middle of tile */
+.tech-stack-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 16px;
+    background-color: rgba(255, 255, 255, 0.928);
+    padding: 8px 16px;
+    min-width: 200px;
+    border: 2px solid black;
+    border-radius: 16px;
+}
+
+/* Provide subtle animation when hovering over tech stack icons */
+.tech-stack-icons img {
+    transition: 0.2s ease-in-out;
+}
+.tech-stack-icons img:hover {
+    transform: scale(1.1) translateY(-4px);
+}
+
+/* Adjust height of all tech stack icons to same height */
 .tech-stack-icons img {
     height: 35px;
+}
+
+/* Adding background images to expertise tiles */
+#frontend-bg {
+    background-image: url(../images/frontend2-bg-unsplash-360w.jpg);
+}
+#backend-bg {
+    background-image: url(../images/backend-bg-unsplash-360w.jpg);
+}
+#database-bg {
+    background-image: url(../images/database2-bg-unpslash-360w.jpg);
+}
+#tools-bg {
+    background-image: url(../images/version2-ctrl-unsplash-360w.jpg);
 }
 
 /* Styling for Blogs Section */
@@ -33,7 +103,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 16px;
     width: 360px;
     height: 100px;
@@ -53,7 +123,7 @@
 .blog-tile img {
     width: 120px;
     height: 150px;
-    border-right: 3px solid black;
+    border-right: 2px solid black;
 }
 
 .blog-text {
@@ -71,4 +141,48 @@
 .blog-date {
     font-size: 16px;
     text-align: end;
+}
+
+/* Playlist Section Styling */
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.song-text {
+    font-family: var(--font-heading);
+    padding: 4px 8px;
+}
+
+.song-text > * {
+    margin: 4px;
+}
+
+.playlist-item {
+    background-color: white;
+    width: 800px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playlist-item img {
+    transition: 0.1s ease-in-out;
+}
+
+.playlist-item img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.play-btn {
+    width: 75px;
+    height: 75px;
+    margin: 0px 16px;
 }
