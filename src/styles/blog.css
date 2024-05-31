@@ -20,6 +20,7 @@ main {
 /* Adjusting date of blog to be smaller in size than title */
 .blog-date {
     font-size: 20px;
+    font-family: var(--font-secondary);
 }
 
 .blog-content {
@@ -34,7 +35,7 @@ main {
 .blog-text {
     padding: 24px;
     text-align: center;
-    font-family: var(--font-heading);
+    font-family: var(--font-secondary);
 }
 
 #prev-btn-div {
@@ -43,7 +44,7 @@ main {
     color: black;
     border-radius: 15px;
     font-size: 16px;
-    font-family: var(--font-heading);
+    font-family: var(--font-secondary);
     width: 293.5px;
     transition: 0.1s ease-in-out;
 }
@@ -60,7 +61,7 @@ main {
     color: white;
     border-radius: 15px;
     font-size: 16px;
-    font-family: var(--font-heading);
+    font-family: var(--font-secondary);
     width: 293.5px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23fff'/%3E%3C/svg%3E");
     background-repeat: no-repeat;

@@ -38,6 +38,7 @@
     align-items: center;
     background-color: white;
     border-radius: 16px;
+    margin: 16px;
 }
 
 /* Font styling to title of projects */
@@ -48,6 +49,12 @@
 .project-tile {
     position: relative;
     width: 360px;
+}
+
+@media screen and (max-width:807px) {
+    .project-tile {
+        width: 85dvw;
+    }
 }
 
 .tile-img {
@@ -75,6 +82,17 @@
     transition: opacity 0.3s;
 }
 
+.image__description {
+    font-family: var(--font-secondary);
+    padding: 0rem 1rem;
+}
+
+@media screen and (max-width: 430px) {
+    .image__description {
+        display: none;
+    }
+}
+
 .image__overlay--blur {
     backdrop-filter: blur(5px);
 }
@@ -96,7 +114,7 @@
 .image__title {
     font-size: 2em;
     font-weight: bold;
-
+    padding-top: 8px;
 }
 
 .image_description {
@@ -114,6 +132,7 @@
 }
 
 .click-more-animation {
+    font-family: var(--font-secondary);
     background-color: white;
     color: black;
     font-weight: bold;
@@ -141,7 +160,7 @@
     color: white;
     border-radius: 15px;
     font-size: 16px;
-    font-family: var(--font-heading);
+    font-family: var(--font-secondary);
     width: 293.5px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23fff'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
