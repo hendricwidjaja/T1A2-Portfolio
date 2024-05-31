@@ -9,15 +9,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    min-height: 100dvh;
+    min-height: 100svh;
     justify-content: space-between;
     margin: 0px;
 }
 
-/* Styling for header section */
-
+/* Styling for header section / navigation bar */
 #logo {
-    padding: 24px 8px 24px 24px;
+    padding: 1.5rem;
 }
 
 #logo a {
@@ -41,15 +40,12 @@ header {
     align-items: center;
 }
 
-@media screen and (max-width: 450px) {
-    
-}
-
 #nav-items {
     font-family:var(--font-heading);
     display: flex;
+    align-items: center;
     gap: 20px;
-    padding: 24px 24px 24px 8px;
+    padding: 1.5rem ;
 }
 
 #nav-items a {
@@ -62,11 +58,16 @@ header {
 
 #nav-items a:hover {
     transform: scale(1.1);
-    text-shadow: 0 0 16px rgba(0, 0, 0, 0.385);
 }
 
 #nav-items a.active {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 450px) {
+    #nav-items a:first-child {
+        display: none;
+    }
 }
 
 /* Styling for background of header & main sections */

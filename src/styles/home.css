@@ -206,6 +206,21 @@ main {
     font-size: 20px;
 }
 
+@media screen and (max-width: 625px) {
+    .frasers-role {
+        flex-direction: column;
+    }
+    .frasers-role > * {
+        margin: 0.5rem;
+    }
+    .education-role {
+        flex-direction: column;
+    }
+    .education-role > * {
+        margin: 0.5rem;
+    }
+}
+
 .coder-academy-section {
     display: flex;
     align-items: center;
@@ -233,6 +248,15 @@ main {
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
+}
+
+@media screen and (max-width: 841px) {
+    .education-role {
+        flex-direction: column;
+    }
+    .education-role > * {
+        margin: 0.5rem;
+    }
 }
 
 .education-heading img {
@@ -313,6 +337,15 @@ main {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.563);
 }
 
+@media screen and (max-width: 699px) {
+    #about-btn-div  {
+        width: 80dvw;
+    }
+    #cv  {
+        width: 80dvw;
+    }
+}
+
 .lets-work-heading {
     display: flex;
     align-items: center;
@@ -349,21 +382,19 @@ form {
 }
 
 .form-input {
-    width: 360px;
+    width: 80dvw;
     border: 2px solid black;
     border-radius: 15px;
     padding: 10px 14px;
     outline: none;
     font-size: 1.2rem;
     font-family: var(--font-secondary);
-    /* background-image: url(../images/message-bg-unsplash.jpg); */
-    background-size: 900px;
 }
 
 /* Resizes width of form inputs to suit larger screens beyond 699px */
 @media screen and (min-width: 699px) {
     .form-input {
-        width: 60dvw;
+        width: 80dvw;
         max-width: 776px;
     }
 }
@@ -388,6 +419,12 @@ form {
     background-repeat: no-repeat;
     background-position: right 24px center;
     transition: 0.1s ease-in-out;
+}
+
+@media screen and (max-width: 699px) {
+    #submit-message {
+        width: 80dvw;
+    }
 }
 
 #submit-message:hover {
