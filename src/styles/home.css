@@ -77,6 +77,129 @@ main {
     max-width: 800px;
 }
 
+/* Styling for testimonial section */
+.review-grid {
+    margin-bottom: 16px;
+}
+
+.testimonial-main-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    justify-content: center;
+}
+
+.testimonial-main-heading img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.reviews {
+    font-family: var(--font-secondary);
+    gap: 1rem;
+    width: 85dvw;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+    'one'
+    'two'
+    'three'
+    'four';
+}
+
+/* Add quotation styling to first and fourth testimonial tile */
+.flex-review-content:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    right: 20px;
+    top: 0;
+    background-image: url(../images/quote-left-solid.svg);
+    background-size: contain;
+}
+
+.flex-review-content:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    transform: rotate(180deg);
+    right: 20px;
+    top: 0;
+    background-image: url(../images/quote-left-solid.svg);
+    background-size: contain;
+}
+
+.flex-review-content:nth-child(1) {
+    grid-area: one;
+    background-color: #364F74;
+    color: white;
+    position: relative;
+}
+.flex-review-content:nth-child(2) {
+    grid-area: two;
+    background-color: #B3C6DB;
+    color: black;
+}
+.flex-review-content:nth-child(3) {
+    grid-area: three;
+    background-color: #FFF5C7;
+    color: black;
+}
+.flex-review-content:nth-child(4) {
+    grid-area: four;
+    background-color: #1A2334;
+    color: white;
+    position: relative;
+}
+
+@media screen and (min-width: 699px) {
+    .reviews {
+        grid-template-areas:
+        'one one two'
+        'three four four';
+        }
+}
+
+.flex-review-content {
+    border: 3px solid black;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.reviewer-details {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.reviewer-details img {
+    height: 3rem;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.reviewer-name-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewer-name-container > * {
+    margin: 0px;
+}
+
+.reviewer-name {
+    font-weight: bold;
+}
+
+.review-highlight {
+    font-weight: bold;
+}
+
 .education-experience {
     padding-left: 24px;
     padding-right: 24px;
@@ -89,12 +212,6 @@ main {
     font-family: var(--font-heading);
     font-size: 1.2rem;
     justify-content: center;
-}
-
-@media screen and (max-width: 490px) {
-    .education-heading {
-        justify-content: flex-end;
-    }
 }
 
 .education-main-heading img {
@@ -156,16 +273,16 @@ main {
     transform: rotate(0.5turn);
 }
 
-.frasers-heading {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-}
-
 .accordion__content a {
     color: black;
     text-decoration: none;
     transition: 0.2s ease-in-out;
+}
+
+.frasers-heading {
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 
 .frasers-heading a:hover {
@@ -205,6 +322,10 @@ main {
     font-size: 20px;
 }
 
+.frasers-role p {
+    font-family: var(--font-secondary)
+}
+
 @media screen and (max-width: 625px) {
     .frasers-role {
         flex-direction: column;
@@ -242,6 +363,10 @@ main {
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
+}
+
+.education-role p {
+    font-family: var(--font-secondary)
 }
 
 @media screen and (max-width: 841px) {
@@ -301,7 +426,7 @@ main {
     background-color: white;
     border-radius: 15px;
     font-size: 16px;
-    font-family: var(--font-heading);
+    font-family: var(--font-secondary);
     width: 293.5px;
     transition: 0.1s ease-in-out;
 }
@@ -318,7 +443,7 @@ main {
     color: white;
     border-radius: 15px;
     font-size: 16px;
-    font-family: var(--font-heading);
+    font-family: var(--font-secondary);
     width: 293.5px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23fff'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
@@ -361,7 +486,7 @@ form {
     flex-direction: column;
     align-items: center;
     padding: 0px 24px;
-    font-family: var(--font-heading);
+    font-family: var(--font-secondary);
     gap: 8px;
 }
 
@@ -408,7 +533,7 @@ form {
     color: white;
     border-radius: 15px;
     font-size: 16px;
-    font-family: var(--font-heading);
+    font-family: var(--font-secondary);
     width: 293.5px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23fff'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
