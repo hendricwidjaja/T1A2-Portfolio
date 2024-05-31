@@ -208,14 +208,9 @@ main {
 @media screen and (max-width: 625px) {
     .frasers-role {
         flex-direction: column;
+        text-align: center;
     }
     .frasers-role > * {
-        margin: 0.5rem;
-    }
-    .education-role {
-        flex-direction: column;
-    }
-    .education-role > * {
         margin: 0.5rem;
     }
 }
@@ -252,6 +247,7 @@ main {
 @media screen and (max-width: 841px) {
     .education-role {
         flex-direction: column;
+        text-align: center;
     }
     .education-role > * {
         margin: 0.5rem;
