@@ -112,15 +112,6 @@
         margin-left: 0px;
         gap: 7%;
     }
-
-    /* Media queries for blog title and associated icons. Adjust font and image sizes */
-    .about-heading h1 {
-        font-size: clamp(2.5rem, 20vw, 5rem);
-    }
-    .about-heading img {
-        width: clamp(1.5rem, 10vw, 3rem);
-        height: clamp(1.5rem, 10vw, 3rem);
-    }
 }
 
 /* Styles and aligns headings for blog and playlist section */
@@ -245,10 +236,11 @@
     display: flex;
     align-items: center;
 }
-/* Adjust album cover art size and padding */
+/* Adjust album cover art size and margin */
 .text-art-container img {
     height: 80px;
-    padding-left: 0.7rem;
+    margin-left: 0.7rem;
+    border: 2px solid black;
 }
 /* Hides album cover art when screen size is 775px wide or less */
 @media screen and (max-width: 775px) {

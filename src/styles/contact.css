@@ -62,6 +62,13 @@ form {
 .form-textarea {
     resize: none;
 }
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+    gap: 32px;
+}
 /* Styling for submit button */
 #submit-message {
     height: 40px;
@@ -77,15 +84,35 @@ form {
     transition: 0.1s ease-in-out;
 }
 
-/* Adjusts submit button size when screen is 699px wide or less */
-@media screen and (max-width: 699px) {
-    #submit-message {
-        width: 80dvw;
-    }
-}
-/* Adds animation to submit button when hovered (scale & box shadow + cursor = pointer) */
+/* Adds animation to submit button on hover (scale up and box shadow) */
 #submit-message:hover {
     cursor: pointer;
     transform: scale(1.02);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.485);
+}
+
+/* Styling for Download CV button */
+#cv {
+    height: 40px;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: var(--font-secondary);
+    width: 293.5px;
+    transition: 0.1s ease-in-out;
+}
+/* Applies scale and box shadow animations on hover of CV button */
+#cv:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.519);
+}
+/* Adjust submit button to 80dvw for screens 699px wide or less */
+@media screen and (max-width: 699px) {
+    #submit-message {
+        width: 80dvw;
+    }
+    #cv {
+        width: 80dvw;
+    }
 }
