@@ -1,9 +1,10 @@
+/* Flexbox container for content to be column and center */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+/* Flexbox container for blog heading and blog publish date */
 .blog-heading {
     display: flex;
     flex-direction: column;
@@ -22,7 +23,7 @@ main {
     font-size: 20px;
     font-family: var(--font-secondary);
 }
-
+/* Apply styling to content section (tile containing text and image) */
 .blog-content {
     max-width: 800px;
     margin: auto;
@@ -31,13 +32,13 @@ main {
     border-radius: 16px;
     overflow: hidden;
 }
-
+/* Applies styling to text for blog */
 .blog-text {
     padding: 24px;
     text-align: center;
     font-family: var(--font-secondary);
 }
-
+/* Applies styling to left button which links to previous blog or back to about page */
 #prev-btn-div {
     height: 40px;
     background-color: white;
@@ -48,13 +49,13 @@ main {
     width: 293.5px;
     transition: 0.1s ease-in-out;
 }
-
+/* Animation effects on hover (scale & box shadow) for "previous blog" button */
 #prev-btn-div:hover {
     cursor: pointer;
     transform: scale(1.02);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.484);
 }
-
+/* Applies styling to right button which links to next blog or project page */
 #next-btn-div {
     height: 40px;
     background-color: black;
@@ -68,13 +69,13 @@ main {
     background-position: right 24px center;
     transition: 0.1s ease-in-out;
 }
-
+/* Animation effects on hover (scale & box shadow) for "next blog" button */
 #next-btn-div:hover {
     cursor: pointer;
     transform: scale(1.02);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.429);
 }
-
+/* Flexbox container for buttons. Allow wrap when screen size gets smaller */
 .buttons {
     display: flex;
     flex-wrap: wrap;
@@ -83,26 +84,19 @@ main {
     gap: 32px;
 }
 
-
+/* Adjust blog tile/content to 84dvw when screen size is less than 992px wide */
 @media screen and (max-width: 992px) {
     .blog-content {
         max-width: 84dvw;
     }
 }
-
+/* Adjusts blog heading to 1.5em font size when screen size is 800px wide or less */
 @media screen and (max-width: 800px) {
     .blog-heading {
         font-size: 1.5em;
     }
 }
-
-@media screen and (max-width: 557px) {
-    .blog-date {
-        display: inline;
-        align-items: flex-start;
-    }
-}
-
+/* Aligns heading and date text to be centred when screen width is 558px or more */
 @media screen and (min-width: 558px) {
     .blog-heading {
         align-items: center;
