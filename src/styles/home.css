@@ -1,4 +1,4 @@
-/* Centred Layout for main section using flex box */
+/* Centred Layout (column) for main section using flex box */
 main {
     display: flex;
     flex-direction: column;
@@ -6,7 +6,7 @@ main {
     margin-bottom: 40px;
 }
 
-/* Styling for Profile picture with responsiveness */
+/* Styling for Profile picture when screen is under 699px wide*/
 .profile img {
     height: 100px;
     width: 100px;
@@ -16,7 +16,7 @@ main {
     transition: 0.2s ease-in-out;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.485);
 }
-
+/* Media query for screens 699px wide or more. Adjusts profile image to centre and increase image size to 150x150px */
 @media screen and (min-width: 699px) {
     .profile {
         display: flex;
@@ -28,27 +28,26 @@ main {
         width: 150px;
     }
 }
-
+/* Adds hover animation & box shadow to profile image on hover */
 .profile img:hover {
     transform: scale(1.25);
     box-shadow: 0 0 25px rgb(0, 0, 0);
 }
-
+/* Applies "Lacquer" font to home page intro heading. Padding for positioning */
 .intro-heading {
     font-family: var(--font-heading);
     font-size: 30px;
     padding-left: 24px;
     padding-right: 24px;
 }
-
+/* Applies transition/transform to scale 1.1 and move up (translateY) to intro heading */
 .intro-heading h1 {
     transition: 0.3s ease-in-out;
 }
-
 .intro-heading h1:hover {
     transform: scale(1.1) translateY(-8px);
 }
-
+/* Changes hover animation to translate 20px to the right instead of scale and translateY when on smaller screens */
 @media screen and (max-width: 698px) {
     .intro-heading h1:hover {
         transform: translate(20px);
@@ -57,7 +56,7 @@ main {
         transform: translate(20px);
     }
 }
-
+/* Adjusts intro heading into row for bigger screens */
 @media screen and (min-width: 699px) {
     .intro-heading {
         display: flex;
@@ -65,7 +64,7 @@ main {
         gap: 24px;
     }
 }
-
+/* Applies secondary font (Poppins) to introduction message. Adjusts text to be centre + padding for positioning on smaller sreens */
 .intro-text {
     font-family: var(--font-secondary);
     text-align: center;
@@ -74,16 +73,16 @@ main {
     display: flex;
     justify-content: center;
 }
-
+/* Limits width of text extending beyond 800px. Keeps texts centre of page */
 .intro-text p {
     max-width: 800px;
 }
 
-/* Styling for testimonial section */
+/* Add margin to bottom of testimonial section for spacing */
 .review-grid {
     margin-bottom: 16px;
 }
-
+/* Flexbox container to include testimonial heading and user check icon + apply font */
 .testimonial-main-heading {
     display: flex;
     align-items: center;
@@ -92,12 +91,12 @@ main {
     font-size: 1.2rem;
     justify-content: center;
 }
-
+/* Adjust user check icon/image size */
 .testimonial-main-heading img {
     width: 2.4rem;
     height: 2.4rem;
 }
-
+/* Applies font to testimonial section and applies 85dvw to allow testimonial section to adjust size according to screen (max width at 1000px). Grid template area as 1 row for each review for smaller screens */
 .reviews {
     font-family: var(--font-secondary);
     gap: 1rem;
@@ -113,6 +112,7 @@ main {
 }
 
 /* Add quotation styling to first and fourth testimonial tile */
+/* Use virtual pseudo element to add quotation "::after". Background image is a light blue quotation mark. Adjust width and height of background image accordingly. Position absolute in relation to "flex-review-content" (1st and 4th child) class. Positioning is 0px from top and 20px from right.  */
 .flex-review-content:nth-child(1)::after {
     content: "";
     position: absolute;
@@ -121,9 +121,7 @@ main {
     right: 20px;
     top: 0;
     background-image: url(../images/quote-left-solid.svg);
-    background-size: contain;
 }
-
 .flex-review-content:nth-child(4)::after {
     content: "";
     position: absolute;
@@ -135,7 +133,16 @@ main {
     background-image: url(../images/quote-left-solid.svg);
     background-size: contain;
 }
-
+/* Remove quotation styling when screen size is 300px wide or less to stop interference with text*/
+@media screen and (max-width: 300px) {
+    .flex-review-content:nth-child(1)::after {
+        display: none;
+    }
+    .flex-review-content:nth-child(4)::after {
+        display: none;
+    }
+}
+/* Applies respective background color and text color (contract checked using colorkit). Also applies position:relative to allow quotation psuedo element styling to child 1 & 4. Also allocates each child to each grid area */
 .flex-review-content:nth-child(1) {
     grid-area: one;
     background-color: #364F74;
@@ -162,7 +169,7 @@ main {
     position: relative;
     transition: 0.1s ease-in-out;
 }
-
+/* Adds scale and box shadow animation when user hovers over testimonials */
 .flex-review-content:nth-child(1):hover {
     transform: scale(1.02);
     box-shadow: 0 0 50px #364F74;
@@ -179,7 +186,7 @@ main {
     transform: scale(1.02);
     box-shadow: 0 0 50px #1A2334;
 }
-
+/* Changes grid layout to bricklay layout when screen is 699px wide or more */
 @media screen and (min-width: 699px) {
     .reviews {
         grid-template-areas:
@@ -187,48 +194,49 @@ main {
         'three four four';
         }
 }
-
+/* Styling for border of testimonials and adds padding */
 .flex-review-content {
     border: 2px solid black;
     border-radius: 16px;
     padding: 20px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.485);
 }
-
+/* Flexbox containing reviewer profile img and name/title */
 .reviewer-details {
     display: flex;
     align-items: center;
     gap: 8px;
 }
-
+/* Adjust reviewer profile picture + styling */
 .reviewer-details img {
     height: 3rem;
     border: 2px solid black;
     border-radius: 50px;
 }
-
+/* Flexbox to contain reviewer name and job title. Change to column */
 .reviewer-name-container {
     display: flex;
     flex-direction: column;
 }
-
+/* Changes margin to 0px for both reviewer name and job title */
 .reviewer-name-container > * {
     margin: 0px;
 }
-
+/* Bolds reviewer name */
 .reviewer-name {
     font-weight: bold;
 }
-
+/* Bolds important/highlight/key message from review to stand out from rest of text*/
 .review-highlight {
     font-weight: bold;
 }
 
+/* Padding to "Education & Experience" heading */
 .education-experience {
     padding-left: 24px;
     padding-right: 24px;
 }
-
+/* Flexbox to contain "Education & Experience" heading with glasses icon/image */
 .education-main-heading {
     display: flex;
     align-items: center;
@@ -237,7 +245,7 @@ main {
     font-size: 1.2rem;
     justify-content: center;
 }
-
+/* Adjust image of glasses */
 .education-main-heading img {
     width: 2.4rem;
     height: 2.4rem;
@@ -245,6 +253,8 @@ main {
 }
 
 /* Interactive Accordion Styling to Education & Experience section */
+/* Adjust max width to 800px and margin-auto to keep content middle of page.
+Overflow=hidden to prevent background image from spilling */
 .accordion {
     max-width: 800px;
     margin: auto;
@@ -254,15 +264,15 @@ main {
     font-family: var(--font-heading);
     background: black;
 }
-
+/* Padding to provide sufficient spacing for accordion labels */
 .accordion__label {
     padding: 14px 20px;
 }
-
+/* Apply padding to content within accordion */
 .accordion__content {
     padding: 14px 20px;
 }
-
+/* Apply styling to accordion lables. Apply position=relative to allow for pseudo element (::after) for dropdown triangle cosmetic. */
 .accordion__label {
     display: block;
     color: white;
@@ -272,13 +282,14 @@ main {
     position: relative;
     transition: background 0.5s;
 }
-
+/* Apply background color change and text color change on hover */
 .accordion__label:hover {
     background: rgba(255, 255, 255, 0.88);
     color: black;
 }
 
-/* Styling for Triangle animation to indicate checked/not checked */
+/* Styling for Triangle animation to assist with indicating checked/not checked
+Background-image is a small triangle. Position halfway (50%) from top and 20px from right. Position is absolute in relation to .accordion__label */
 .accordion__label::after {
     content: "";
     position: absolute;
@@ -296,31 +307,31 @@ main {
 .accordion__input:checked ~ .accordion__label::after {
     transform: rotate(0.5turn);
 }
-
+/* Change default link styling to black and not underlined with 0.2 transition timing for hover animations */
 .accordion__content a {
     color: black;
     text-decoration: none;
     transition: 0.2s ease-in-out;
 }
-
+/* Flexbox to contain "Frasers Property Australia" text and company logo + gap */
 .frasers-heading {
     display: flex;
     align-items: center;
     gap: 24px;
 }
-
+/* Scale animation when hovering over Frasers Property Australia text */
 .frasers-heading a:hover {
     transform: scale(1.1);
 }
-
+/* Scale animation when hovering over Coder Academy text */
 .coder-academy-section a:hover {
     transform: scale(1.1);
 }
-
+/* Scale animation when hovering over UNSW text */
 .unsw-section a:hover {
     transform: scale(1.1);
 }
-
+/* Adjust Frasers Property Australia logo */
 .frasers-heading img {
     width: 48px;
     height: 48px;
@@ -332,34 +343,33 @@ main {
     flex-direction: column;
     gap: 10px;
 }
-
+/* Flexbox container to contain "role" content (e.g. Customer Service Coordinator + 2024 - current). Apply white background to increase eligibility over background image */
 .frasers-role {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.811);
-    /* background-color: transparent;
-    backdrop-filter: blur(40px); */
     border-radius: 20px;
     padding: 0px 16px;
     border: 4px solid black;
     font-size: 20px;
 }
-
+/* Apply secondary font (Poppins) for readability. Targetting children of .frasers role class */
 .frasers-role > * {
     font-family: var(--font-secondary)
 }
-
+/* Media query for screen sizes 625px wide or less for legibility. Change content to be column */
 @media screen and (max-width: 625px) {
     .frasers-role {
         flex-direction: column;
         text-align: center;
     }
+    /* Reduce margin to prevent too much space */
     .frasers-role > * {
         margin: 0.5rem;
     }
 }
-
+/* Similar to Frasers Property Australia section styling */
 .coder-academy-section {
     display: flex;
     align-items: center;
@@ -392,7 +402,7 @@ main {
 .education-role > * {
     font-family: var(--font-secondary)
 }
-
+/* Prevents dates for education to wrap when screen gets smaller */
 .education-role p {
     white-space: nowrap;
 }
@@ -411,11 +421,8 @@ main {
     width: 48px;
     height: 48px;
 }
-
+/* Hides accordion content when checkbox is unchecked */
 .accordion__content {
-    background: white;
-    line-height: 1.6;
-    font-size: 0.85em;
     display: none;
 }
 
@@ -429,7 +436,7 @@ main {
 .accordion__input:checked ~ .accordion__content {
     display: block;
 }
-
+/* Adds background image to respective sections */
 #work-exp-background {
     background-image: url(../images/fpa-bg1-unsplash.jpg);
     background-size: 800px;
@@ -440,7 +447,7 @@ main {
     background-image: url(../images/unsw-bg2-unsplash.jpg);
     background-size: 800px;
 }
-
+/* Flexbox container for Download CV & "Learn more about me" buttons */
 .buttons {
     display: flex;
     flex-wrap: wrap;
@@ -448,7 +455,7 @@ main {
     padding: 40px;
     gap: 32px;
 }
-
+/* Styling for Download CV button */
 #cv {
     height: 40px;
     background-color: white;
@@ -458,13 +465,13 @@ main {
     width: 293.5px;
     transition: 0.1s ease-in-out;
 }
-
+/* Applies scale and box shadow animations on hover of CV button */
 #cv:hover {
     cursor: pointer;
     transform: scale(1.02);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.519);
 }
-
+/* Styling for "Learn more about me" button with white arrow pointing right as background image positioned 24px from right */
 #about-btn-div {
     height: 40px;
     background-color: black;
@@ -478,13 +485,13 @@ main {
     background-position: right 24px center;
     transition: 0.1s ease-in-out;
 }
-
+/* Applies scale and box shadow animations on hover of button */
 #about-btn-div:hover {
     cursor: pointer;
     transform: scale(1.02);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.563);
 }
-
+/* Adjusts button sizes to be 80dvw when screen is 699px wide or less */
 @media screen and (max-width: 699px) {
     #about-btn-div  {
         width: 80dvw;
@@ -493,7 +500,7 @@ main {
         width: 80dvw;
     }
 }
-
+/* Flexbox container to "Lets Work Together" heading and handshake icon */
 .lets-work-heading {
     display: flex;
     align-items: center;
@@ -502,13 +509,12 @@ main {
     font-size: 1rem;
     justify-content: center;
 }
-
+/* Adjust icon handshake size*/
 .lets-work-heading img {
-    display: inline-block;
     width: 2.4rem;
     height: 2.4rem;
 }
-
+/* Flexbox container for form content (3x form elements - containing 3x labels and 3x text input sections */
 form {
     display: flex;
     flex-direction: column;
@@ -517,18 +523,18 @@ form {
     font-family: var(--font-secondary);
     gap: 8px;
 }
-
+/* Flexbox container for each label and text area. Aligned in column*/
 .form-elements {
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
 }
-
+/* Styling for label */
 .form-elements label {
     padding: 8px;
     font-size: 1.5rem;
 }
-
+/* Styling for text areas */
 .form-input {
     width: 80dvw;
     border: 2px solid black;
@@ -546,15 +552,15 @@ form {
         max-width: 776px;
     }
 }
-
+/* Styling when text area is clicked. Slight inset box shadow in grey with 0.592 opacity*/
 .form-input:focus {
     box-shadow: inset 0px 0px 10px 0px rgba(192, 192, 192, 0.592);
 }
-
+/* To prevent text area from being resized */
 .form-textarea {
     resize: none;
 }
-
+/* Styling for submit button */
 #submit-message {
     height: 40px;
     background-color: black;
@@ -568,13 +574,13 @@ form {
     background-position: right 24px center;
     transition: 0.1s ease-in-out;
 }
-
+/* Adjusts submit button size when screen is 699px wide or less */
 @media screen and (max-width: 699px) {
     #submit-message {
         width: 80dvw;
     }
 }
-
+/* Adds animation to submit button when hovered (scale & box shadow + cursor = pointer) */
 #submit-message:hover {
     cursor: pointer;
     transform: scale(1.02);
