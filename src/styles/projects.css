@@ -1,3 +1,4 @@
+/* Flexbox to contain "Projects" heading and tools icon */
 .projects-heading {
     display: flex;
     align-items: center;
@@ -6,15 +7,13 @@
     font-size: 2.5rem;
     justify-content: center;
 }
-
-
+/* Adjust size of tools icon */
 .projects-heading img {
-    /* display: inline-block; */
     width: 3rem;
     height: 3rem;
 }
 
-/* Layout of main content using flexbox */
+/* Layout of main content using flexbox and adjust gap between content and header/footer */
 .main-flexbox {
     display: flex;
     flex-direction: column;
@@ -23,7 +22,7 @@
     margin-bottom: 40px;
 }
 
-/* Layout of projects using flexbox */
+/* Layout of project "tiles" using flexbox. Tiles to wrap when page width gets too small*/
 .flexbox-projects {
     display: flex;
     justify-content: center;
@@ -45,24 +44,24 @@
 .project-item h2 {
     font-family: var(--font-heading);
 }
-
+/* Apply relative positioning and maintain width (360px). Applied relative positioning to allow for absolute positioning of image__overlay */
 .project-tile {
     position: relative;
     width: 360px;
 }
-
+/* Adjust tile width to 85dvw when screen becomes 807px or smaller */
 @media screen and (max-width:807px) {
     .project-tile {
         width: 85dvw;
     }
 }
-
+/* Styling to project image to fill block */
 .tile-img {
     display: block;
     width: 100%;
     border-radius: 16px;
 }
-
+/* Overlay of text to project image. Styled to fill block and text to be centred. Position absolute in relation to project-tile class. Opacity set to 0 as default until hovered (see .image__overlay:hover) */
 .image__overlay {
     position: absolute;
     top: 0;
@@ -81,47 +80,47 @@
     opacity: 0;
     transition: opacity 0.3s;
 }
-
+/* Apply font to project description text */
 .image__description {
     font-family: var(--font-secondary);
     padding: 0rem 1rem;
 }
-
+/* Change description text to be removed when screen is 430px wide or less */
 @media screen and (max-width: 430px) {
     .image__description {
         display: none;
     }
 }
-
+/* Applies blur effect to background of description text to make project tile "blurry" */
 .image__overlay--blur {
     backdrop-filter: blur(5px);
 }
-
+/* Positions project description text to be 20px below correct position (not visible)  */
 .image__overlay > * {
     transform: translateY(20px);
     transition: transform 0.3s;
 }
-
+/* Changes project description text to opacity = 1 so it will be visible on hover. Box shadow for styling and "pop" effect when hovering */
 .image__overlay:hover {
     opacity: 1;
     box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.592);
 }
-
+/* Translate project text to original position when hovering to provide a "slide up" animation */
 .image__overlay:hover > * {
     transform: translateY(0px);
 }
-
+/* Styling to project titles */
 .image__title {
     font-size: 2em;
     font-weight: bold;
     padding-top: 8px;
 }
-
+/* Styling to project text descriptions */
 .image_description {
     font-size: 1.25em;
     margin-top: 0.25em;
 }
-
+/* Creates a "breathing" animation for "click for more" button */
 @keyframes breathe {
     50% {
         transform: scale(1.1);
@@ -130,7 +129,7 @@
         transform: scale(1);
     }
 }
-
+/* Styling to "Click for more" button */
 .click-more-animation {
     font-family: var(--font-secondary);
     background-color: white;
@@ -146,7 +145,7 @@
     text-decoration: none;
 }
 
-/* Add "breathe" effect animation when hovering "click for more" button */
+/* Applies "breathe" effect animation when hovering "click for more" button */
 .click-more-animation:hover {
     animation: breathe 1.5s linear infinite;
     cursor: pointer;
@@ -167,7 +166,7 @@
     background-position: right 24px center;
     transition: 0.1s ease-in-out;
 }
-
+/* Animates button (scale and box shadow) on hover */
 #contact-btn-div:hover {
     cursor: pointer;
     transform: scale(1.02);
