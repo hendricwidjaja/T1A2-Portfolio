@@ -1,7 +1,8 @@
+/* Apply padding for spacing between content and footer */
 main {
     padding-bottom: 48px;
 }
-
+/* Flexbox container for contact page heading. Aligns text and pointer icon*/
 .contact-heading {
     display: flex;
     align-items: center;
@@ -10,13 +11,12 @@ main {
     font-size: 2rem;
     justify-content: center;
 }
-
+/* Adjusts pointer icon size */
 .contact-heading img {
-    display: inline-block;
     width: 3rem;
     height: 3rem;
 }
-
+/* Flexbox container for form content (3x form elements - containing 3x labels and 3x text input sections */
 form {
     display: flex;
     flex-direction: column;
@@ -25,18 +25,18 @@ form {
     font-family: var(--font-secondary);
     gap: 8px;
 }
-
+/* Flexbox container for each label and text area. Aligned in column*/
 .form-elements {
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
 }
-
+/* Styling for label */
 .form-elements label {
     padding: 8px;
     font-size: 1.5rem;
 }
-
+/* Styling for text areas */
 .form-input {
     width: 80dvw;
     border: 2px solid black;
@@ -54,15 +54,15 @@ form {
         max-width: 776px;
     }
 }
-
+/* Styling when text area is clicked. Slight inset box shadow in grey with 0.592 opacity*/
 .form-input:focus {
     box-shadow: inset 0px 0px 10px 0px rgba(192, 192, 192, 0.592);
 }
-
+/* To prevent text area from being resized */
 .form-textarea {
     resize: none;
 }
-
+/* Styling for submit button */
 #submit-message {
     height: 40px;
     background-color: black;
@@ -77,12 +77,13 @@ form {
     transition: 0.1s ease-in-out;
 }
 
+/* Adjusts submit button size when screen is 699px wide or less */
 @media screen and (max-width: 699px) {
     #submit-message {
         width: 80dvw;
     }
 }
-
+/* Adds animation to submit button when hovered (scale & box shadow + cursor = pointer) */
 #submit-message:hover {
     cursor: pointer;
     transform: scale(1.02);
