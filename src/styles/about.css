@@ -1,101 +1,44 @@
+.full-stack-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 744px;
+    margin: auto;
+}
+
+.tech-stack-grid {
+    padding-top: 16px;
+}
+
+/* Heading CSS for tech stack + icon */
 .tech-stack-heading-layout {
     display: flex;
-    align-items: center;
-    gap: 20px;
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    justify-content: center;
-}
-
-.tech-stack-heading-layout img {
-    width: 3rem;
-    height: 3rem;
-}
-
-.about-heading {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    justify-content: center;
-}
-
-.about-heading img {
-    width: 3rem;
-    height: 3rem;
-}
-
-@media screen and (max-width: 440px) {
-    .about-heading {
-        font-size: 1.2rem;
-    }
-}
-
-/* Provide layout of expertise tiles using flexbox. Max width 800 to prevent tiles from creating more than 2 columns. Margin auto to keep tiles center of page */
-.tech-stack {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 800px;
-    margin: auto;
-    padding: 16px;
-    gap: 24px;
-}
-
-/* Provide layout to content within expertise tile and general tile styling */
-.expertise-tile {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 360px;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid black;
-    border-radius: 16px;
+    font-family: var(--font-heading);
+    width: 400px;
 }
-
-@media screen and (max-width: 783px) {
-    .expertise-tile {
-        width: 80vw;
-    }
-    #frontend-bg {
-        background-size: 100%;
-    }
-    #backend-bg {
-        background-size: 100%;
-    }
-    #database-bg {
-        background-size: 100%;
-    }
-    #tools-bg {
-        background-size: 100%;
-    }
-}
-
-/* Give heading font, background transparent with blur effect. Also align text to center*/
-.expertise-heading {
+.tech-stack-heading-layout h3 {
     font-family: var(--font-secondary);
-    color: rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.928);
-    backdrop-filter: blur(20px);
-    border: 2px solid black;
-    border-radius: 16px;
-    padding: 4px 16px;
-    min-width: 150px;
-    text-align: center;
+    font-size: 1.2rem;
 }
-
-/* Give icons background color & border and positioning to middle of tile */
-.tech-stack-icons {
+.tech-heading {
+    padding: 0px;
+    margin: 0px;
+    font-size: 10rem;
+}
+.stack-heading-container {
     display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin-bottom: 16px;
-    background-color: rgba(255, 255, 255, 0.928);
-    padding: 8px 16px;
-    min-width: 200px;
-    border: 2px solid black;
-    border-radius: 16px;
+    align-items: center;
+    gap: 20px;
+}
+.stack-heading-container h1 {
+    font-size: 5rem;
+    padding: 0px 0px 10px 0px;
+    margin: 0px;
+}
+.stack-heading-container img {
+    width: 6rem;
+    height: 6rem;
 }
 
 /* Provide subtle animation when hovering over tech stack icons */
@@ -108,21 +51,101 @@
 
 /* Adjust height of all tech stack icons to same height */
 .tech-stack-icons img {
-    height: 35px;
+    height: 40px;
 }
 
-/* Adding background images to expertise tiles */
-#frontend-bg {
-    background-image: url(../images/frontend2-bg-unsplash-360w.jpg);
+.tech-stack-icons {
+    display: flex;
+    gap: 30px;
+    margin: 24px 0px 24px 24px;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.485);
+    padding: 8px 24px;
+    border-radius: 16px;
 }
-#backend-bg {
-    background-image: url(../images/backend-bg-unsplash-360w.jpg);
+
+@media screen and (max-width: 775px) {
+    .full-stack-section {
+        flex-direction: column;
+        width: 80dvw;
+    }
+
+    .tech-stack-heading-layout {
+        width: 80dvw;
+        align-items: center;
+    }
+
+    .tech-stack-heading-layout h3 {
+        font-family: var(--font-secondary);
+        font-size: 1rem;
+    }
+    .tech-heading {
+        padding: 0px;
+        margin: 0px;
+        /* font-size: 8rem; */
+        font-size: clamp(5rem, 40vw, 10rem);
+    }
+    .stack-heading-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .stack-heading-container h1 {
+        font-size: clamp(2.5rem, 20vw, 5rem);
+        padding: 0px 0px 10px 0px;
+        margin: 0px;
+    }
+    .stack-heading-container img {
+        width: clamp(3rem, 30vw, 6rem);
+        height: 6rem;
+    }
+
+    .tech-stack-grid {
+        width: 80dvw;
+    }
+    .tech-stack-icons {
+        flex-wrap: wrap;
+        margin-left: 0px;
+        gap: 7%;
+    }
+
+    /* Media queries for blog title */
+    .about-heading h1 {
+        font-size: clamp(2.5rem, 20vw, 5rem);
+    }
+    .about-heading img {
+        width: clamp(1.5rem, 10vw, 3rem);
+        height: clamp(1.5rem, 10vw, 3rem);
+    }
 }
-#database-bg {
-    background-image: url(../images/database2-bg-unpslash-360w.jpg);
+
+.blog-links {
+    position: relative;
 }
-#tools-bg {
-    background-image: url(../images/version2-ctrl-unsplash-360w.jpg);
+
+/* end of tech-stack test */
+
+
+.about-heading {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    justify-content: center;
+}
+
+.about-heading img {
+    width: 3rem;
+    height: 3rem;
+}
+
+@media screen and (max-width: 440px) {
+    .about-heading {
+        font-size: 1.2rem;
+    }
 }
 
 /* Styling for Blogs Section */
@@ -141,12 +164,13 @@
     display: flex;
     align-items: center;
     background-color: white;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 16px;
     width: 740px;
     height: 100px;
     font-family: var(--font-secondary);
     overflow: hidden;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.485);
 }
 
 @media screen and (max-width: 775px) {
@@ -192,22 +216,6 @@
     padding: 0px;
 }
 
-/* @media screen and (min-width: 440px) {
-    .blog-text {
-        flex-direction: row;
-        justify-content: center;
-        gap: 16px;
-    }
-
-    .blog-title {
-        margin-bottom: 16px
-    }
-
-    .blog-tile {
-
-    }
-} */
-
 /* Playlist Section Styling */
 
 .playlist {
@@ -236,16 +244,18 @@
     margin: auto;
     border: 2px solid black;
     border-radius: 16px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.485);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
-.playlist-item img {
+.playlist-item img:last-child {
     transition: 0.1s ease-in-out;
 }
 
-.playlist-item img:hover {
+.playlist-item img:last-child:hover {
     cursor: pointer;
     transform: scale(1.05);
 }

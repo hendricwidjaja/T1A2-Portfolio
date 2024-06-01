@@ -141,22 +141,43 @@ main {
     background-color: #364F74;
     color: white;
     position: relative;
+    transition: 0.1s ease-in-out;
 }
 .flex-review-content:nth-child(2) {
     grid-area: two;
     background-color: #B3C6DB;
     color: black;
+    transition: 0.1s ease-in-out;
 }
 .flex-review-content:nth-child(3) {
     grid-area: three;
     background-color: #FFF5C7;
     color: black;
+    transition: 0.1s ease-in-out;
 }
 .flex-review-content:nth-child(4) {
     grid-area: four;
     background-color: #1A2334;
     color: white;
     position: relative;
+    transition: 0.1s ease-in-out;
+}
+
+.flex-review-content:nth-child(1):hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 50px #364F74;
+}
+.flex-review-content:nth-child(2):hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 50px #B3C6DB;
+}
+.flex-review-content:nth-child(3):hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 50px #FFF5C7;
+}
+.flex-review-content:nth-child(4):hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 50px #1A2334;
 }
 
 @media screen and (min-width: 699px) {
@@ -325,7 +346,7 @@ main {
     font-size: 20px;
 }
 
-.frasers-role h3, p {
+.frasers-role > * {
     font-family: var(--font-secondary)
 }
 
@@ -368,8 +389,12 @@ main {
     font-size: 20px;
 }
 
-.education-role h3, p {
+.education-role > * {
     font-family: var(--font-secondary)
+}
+
+.education-role p {
+    white-space: nowrap;
 }
 
 @media screen and (max-width: 841px) {
