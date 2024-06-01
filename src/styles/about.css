@@ -1,3 +1,17 @@
+.tech-stack-heading-layout {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+.tech-stack-heading-layout img {
+    width: 3rem;
+    height: 3rem;
+}
+
 .about-heading {
     display: flex;
     align-items: center;
@@ -26,7 +40,7 @@
     max-width: 800px;
     margin: auto;
     padding: 16px;
-    gap: 16px;
+    gap: 24px;
 }
 
 /* Provide layout to content within expertise tile and general tile styling */
@@ -40,7 +54,7 @@
     border-radius: 16px;
 }
 
-@media screen and (max-width: 775px) {
+@media screen and (max-width: 783px) {
     .expertise-tile {
         width: 80vw;
     }
@@ -116,9 +130,9 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 24px;
     margin: 24px;
-    max-width: 800px;
+    max-width: 400px;
     margin: auto;
     padding: 16px;
 }
@@ -126,11 +140,10 @@
 .blog-tile {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: white;
     border: 2px solid black;
     border-radius: 16px;
-    width: 360px;
+    width: 740px;
     height: 100px;
     font-family: var(--font-secondary);
     overflow: hidden;
@@ -159,21 +172,41 @@
 
 .blog-text {
     padding: 0px 16px;
+    height: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     color: black;
 }
 
 .blog-title {
     font-size: 16px;
-    margin-bottom: 0px
+    margin: 0px;
+    padding: 0px;
 }
 
 .blog-date {
     font-size: 16px;
-    text-align: end;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
 }
+
+/* @media screen and (min-width: 440px) {
+    .blog-text {
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .blog-title {
+        margin-bottom: 16px
+    }
+
+    .blog-tile {
+
+    }
+} */
 
 /* Playlist Section Styling */
 
