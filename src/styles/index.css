@@ -1,10 +1,11 @@
-/* Variables */
+/* Variables: Includes "Lacquer" for main heading font and "Poppins" for small text and subheadings*/
 :root {
     --font-heading: "Lacquer";
     --font-secondary: "Poppins";
     --main-background: linear-gradient(rgba(255, 255, 255, 0.354), #c6c6c6)
 }
 
+/* CSS Flexbox containing header, main and footer to set layout of general page. Min-height 100svh to ensure footer stays at bottom of page (svh to ensure smoother scrolling on phones when search bar disappears from top  */
 body {
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +15,7 @@ body {
     margin: 0px;
 }
 
-/* Adds animation/transition when loading pages */
+/* Adds animation/transition when loading pages. Targets main section/content only. Change transition takes 0.3s. Opacity from 0 to 1. Page also translates upwards by 20px */
 main {
     animation: page-transition 0.3s;
 }
@@ -31,14 +32,13 @@ main {
     }
 }
 
-/* Styling for header section / navigation bar */
+/* Add padding to move logo away from left corner of page */
 #logo {
     padding: 1.5rem;
 }
-
+/* Add styling and transition to logo (smiley face emoji ":)" in "Lacquer" font). Sans-serif backup font */
 #logo a {
-    font-family: var(--font-heading);
-    display: inline-block;
+    font-family: var(--font-heading), sans-serif;
     color: black;
     font-size: 3rem;
     text-decoration: none;
@@ -46,27 +46,32 @@ main {
     transition: 0.1s ease-in-out;
 }
 
+/* Add transformation and text-shadow when hover over logo */
 #logo a:hover {
     transform: scale(1.25) rotate(5deg) translate(2px);
     text-shadow: 0 0 16px black;
 }
 
+/* Flexbox to align layout of navigation bar and space between for logo at top and nav items at bottom of flex container */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+/* If max width to nav bar to be applied, uncomment below */
     /* max-width: 1400px;
     margin: auto; */
 }
 
+/* Styling for nav items. Layout row, aligned with gap and padding */
 #nav-items {
-    font-family:var(--font-heading);
+    font-family:var(--font-heading), sans-serif;
     display: flex;
     align-items: center;
     gap: 20px;
     padding: 1.5rem ;
 }
 
+/* Change nav items from default to black with no underline and add transition 0.1s ease in out to apply scale transformation on hover */
 #nav-items a {
     text-decoration: none;
     color: black;
@@ -75,14 +80,17 @@ header {
     font-size: 1.2rem;
 }
 
+/* Scale nav item by 1.1 when hovered */
 #nav-items a:hover {
     transform: scale(1.1);
 }
 
+/* Underlines respective nav item when page is active (check html header section) */
 #nav-items a.active {
     text-decoration: underline;
 }
 
+/* Remove "home" nav item when viewport is 450px or less. User can still use "logo" to navigate home */
 @media screen and (max-width: 450px) {
     #nav-items a:first-child {
         display: none;
@@ -102,9 +110,9 @@ footer {
     text-align: center;
 }
 
+/* Styling for logo located in footer ":)". Similar to main logo but smaller font size */
 #footer-logo a {
-    font-family: var(--font-heading);
-    display: inline-block;
+    font-family: var(--font-heading), sans-serif;
     color: black;
     font-size: 2rem;
     text-decoration: none;
@@ -112,15 +120,18 @@ footer {
     transition: 0.1s ease-in-out;
 }
 
+/* Scale footer logo by 1.1 and add text shadow on hover */
 #footer-logo a:hover {
     transform: scale(1.1);
     text-shadow: 0 0 16px black;
 }
 
+/* Footer text margin to push up footer text */
 .footer-text {
     margin-bottom: 24px;
 }
 
+/* Flexbox to lay social media icons in a row and centered. Gap to spread icons apart and margin to separate from footer text */
 .social-media {
     display: flex;
     justify-content: center;
@@ -128,6 +139,7 @@ footer {
     margin-bottom: 24px;
 }
 
+/* Styling to change default styling of links. Add circle border and box shadow to create "pop" effect */
 .social-media i {
     font-size: 24px;
     color: black;
@@ -140,11 +152,13 @@ footer {
     transition: 0.1s ease-in-out;
 }
 
+/* Add transform and box shadow when hovering social media links */
 .social-media i:hover {
     transform: scale(1.1);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.452);
 }
 
+/* Adjust font to footer with backup font*/
 .footer-text {
-    font-family: var(--font-secondary);
+    font-family: var(--font-secondary), sans-serif;
 }
