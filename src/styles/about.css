@@ -1,3 +1,4 @@
+/* Flexbox container for Tech Stack section. Aligns "tech-stack-heading-layout" and "tech-stack-grid". Max width set to 744px and margin auto to set content and remain static in the centre */
 .full-stack-section {
     display: flex;
     justify-content: center;
@@ -6,45 +7,52 @@
     margin: auto;
 }
 
+/* Padding to help align tech stack grid with large heading */
 .tech-stack-grid {
     padding-top: 16px;
 }
 
-/* Heading CSS for tech stack + icon */
+/* Flexbox to contain "tech stack (briefcase image) and short sentence (h3) */
 .tech-stack-heading-layout {
     display: flex;
     flex-direction: column;
     font-family: var(--font-heading);
     width: 400px;
 }
+/* Apply secondary font and sizing */
 .tech-stack-heading-layout h3 {
     font-family: var(--font-secondary);
     font-size: 1.2rem;
 }
+/* Remove padding and margin to place text closer to remainder of text in this section. Font size to be 10rem */
 .tech-heading {
     padding: 0px;
     margin: 0px;
     font-size: 10rem;
 }
+/* Flexbox container to include "stack" text and briefcase image/icon. Aligns and adds gap */
 .stack-heading-container {
     display: flex;
     align-items: center;
     gap: 20px;
 }
+/* Adjust font size of "stack" and remove padding and margins (except for bottom margin) */
 .stack-heading-container h1 {
     font-size: 5rem;
     padding: 0px 0px 10px 0px;
     margin: 0px;
 }
+/* Adjust briefcase image to 6rem width and height */
 .stack-heading-container img {
     width: 6rem;
     height: 6rem;
 }
 
-/* Provide subtle animation when hovering over tech stack icons */
+/* Provide transition timing & ease in out when hovering over tech stack icons */
 .tech-stack-icons img {
     transition: 0.2s ease-in-out;
 }
+/* Provide subtle animation when hovering over tech stack icons */
 .tech-stack-icons img:hover {
     transform: scale(1.1) translateY(-4px);
 }
@@ -53,7 +61,7 @@
 .tech-stack-icons img {
     height: 40px;
 }
-
+/* Flexbox container to create rows of "tech-stack-icons". Apply border/background color and box shadow for "pop" effect. Gap and margin to adjust positioning*/
 .tech-stack-icons {
     display: flex;
     gap: 30px;
@@ -65,53 +73,47 @@
     padding: 8px 24px;
     border-radius: 16px;
 }
-
+/* Media Query for smaller windows 775px or less */
 @media screen and (max-width: 775px) {
+    /* Change flexbox direction of tech stack to column */
     .full-stack-section {
         flex-direction: column;
         width: 80dvw;
     }
-
+    /* Adjust width and items aligned centre */
     .tech-stack-heading-layout {
         width: 80dvw;
         align-items: center;
     }
-
+    /* Adjust short text to 1rem for smaller displays */
     .tech-stack-heading-layout h3 {
-        font-family: var(--font-secondary);
         font-size: 1rem;
     }
+    /* Adjust font size of "tech" to 40vw (max 10rem, min 5rem) */
     .tech-heading {
-        padding: 0px;
-        margin: 0px;
-        /* font-size: 8rem; */
         font-size: clamp(5rem, 40vw, 10rem);
     }
-    .stack-heading-container {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
+    /* Adjust font size of "stack" to 20vw (max 5rem, min 2.5rem) */
     .stack-heading-container h1 {
         font-size: clamp(2.5rem, 20vw, 5rem);
-        padding: 0px 0px 10px 0px;
-        margin: 0px;
     }
+    /* Adjust image size of briefcase to 30vw (max 6rem, min 3rem) */
     .stack-heading-container img {
         width: clamp(3rem, 30vw, 6rem);
-        height: 6rem;
+        height: clamp(3rem, 30vw, 6rem);
     }
-
+    /* Adjust row of tech stack icons to spread 80dvw */
     .tech-stack-grid {
         width: 80dvw;
     }
+    /* Allow icons to wrap if required when screen width gets smaller. Remove margin applied for layouts larger than 775px. 7% gap to allow icons to remain in row by reducing gap as screen gets smaller */
     .tech-stack-icons {
         flex-wrap: wrap;
         margin-left: 0px;
         gap: 7%;
     }
 
-    /* Media queries for blog title */
+    /* Media queries for blog title and associated icons. Adjust font and image sizes */
     .about-heading h1 {
         font-size: clamp(2.5rem, 20vw, 5rem);
     }
@@ -120,11 +122,6 @@
         height: clamp(1.5rem, 10vw, 3rem);
     }
 }
-
-.blog-links {
-    position: relative;
-}
-
 
 /* Styles and aligns headings for blog and playlist section */
 .about-heading {
@@ -135,30 +132,26 @@
     font-size: 2.5rem;
     justify-content: center;
 }
-
+/* Adjust subheading image/icon */
 .about-heading img {
     width: 3rem;
     height: 3rem;
 }
-
+/* Adjust heading for blogs and playlist for mobile screens */
 @media screen and (max-width: 440px) {
-    .about-heading {
-        font-size: 1.2rem;
+    .about-heading h1 {
+        font-size: 3rem;
     }
 }
 
-/* Styling for Blogs Section */
+/* Flexbox to contain blog "tiles" in column and centred with gap between children  */
 .blog-collection {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     gap: 24px;
-    margin: 24px;
-    max-width: 400px;
-    margin: auto;
-    padding: 16px;
 }
-
+/* Flexbox to contain content of each blog "tile". Styling (e.g. border, color, font) + overflow hidden to hide image overflow */
 .blog-tile {
     display: flex;
     align-items: center;
@@ -171,28 +164,28 @@
     overflow: hidden;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.485);
 }
-
+/* Adjust width of blog "tiles" to 80vw with screen is 775px or smaller */
 @media screen and (max-width: 775px) {
     .blog-tile {
         width: 80vw;
     }
 }
-
+/* Remove default styling of links for blogs */
 .blog-collection a {
     text-decoration: none;
     transition: 0.1s ease-in-out;
 }
-
+/* Add transform scale 1.05 to hover on blog tile to help indicate to user it is a link */
 .blog-collection a:hover {
     transform: scale(1.05);
 }
-
+/* Adjust sizing of image in "blog tile" + add border to right side of image to separate from text*/
 .blog-tile img {
     width: 120px;
     height: 150px;
-    border-right: 2px solid black;
+    border-right: 3px solid black;
 }
-
+/* Adjust and position text within flexbox container + styling */
 .blog-text {
     padding: 0px 16px;
     height: 100px;
@@ -201,42 +194,39 @@
     justify-content: space-around;
     color: black;
 }
-
+/* Adjust font size and remove margin/padding */
 .blog-title {
-    font-size: 16px;
+    font-size: 1rem;
     margin: 0px;
     padding: 0px;
 }
-
+/* Remove margin/padding */
 .blog-date {
-    font-size: 16px;
-    text-align: left;
     margin: 0px;
     padding: 0px;
 }
 
-/* Playlist Section Styling */
-
+/* Flexbox container for playlist section (column) + spacing using gap and margin */
 .playlist {
     display: flex;
     flex-direction: column;
     gap: 16px;
     margin-bottom: 40px;
 }
-
+/* Apply "Lacquer" font to song title */
 .song-text h2 {
     font-family: var(--font-heading)
 }
-
+/* Apply "Poppins" font to remainder of text + padding to adjust position */
 .song-text {
     font-family: var(--font-secondary);
     padding: 4px 8px;
 }
-
+/* Target direct children of .song-text. Adjust position using margin */
 .song-text > * {
     margin: 4px;
 }
-
+/* Flexbox to contain content of each song "tile" and adjust positioning of content (space-between to have art and text on left and "play" button on right). Margin-auto to centre "tiles" on page + general styling for each listed song "tile" */
 .playlist-item {
     background-color: white;
     width: 740px;
@@ -247,54 +237,53 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
     overflow: hidden;
 }
 
-/* Styling to add album cover at 775px width */
+/* Put album art and song text into flexbox container and align. */
 .text-art-container {
     display: flex;
     align-items: center;
 }
+/* Adjust album cover art size and padding */
 .text-art-container img {
     height: 80px;
     padding-left: 0.7rem;
 }
-
+/* Hides album cover art when screen size is 775px wide or less */
 @media screen and (max-width: 775px) {
     .text-art-container img {
         display: none;
     }
 }
-
+/* Targets play button image. Applies transition 0.1 ease in out */
 .playlist-item img:last-child {
     transition: 0.1s ease-in-out;
 }
-
+/* Targets play button image. Applies scale up 1.05 and changes cursor to pointer on hover */
 .playlist-item img:last-child:hover {
     cursor: pointer;
     transform: scale(1.05);
 }
-
+/* Adjust sizing of "play" button. Margin adjustments for positioning */
 .play-btn {
     width: 75px;
     height: 75px;
     margin: 3px 16px 0px 0px;
 }
-
+/* Media query: Adjusts playlist "tile" to be 80 of viewport width when screen is 775px wide or less */
 @media screen and (max-width: 775px) {
     .playlist-item {
         width: 80vw;
     }
 }
-
-/* CSS for animated "See my projects" button --> Links to projects.html Page */
+/* Flexbox container to adjust "See my projects" button to align centre of page  */
 .btn-div {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
-
+/* CSS for animated "See my projects" button --> Links to projects.html Page */
+/* Background image is svg of arrow pointing right. Background no repeat to allow background to only appear once. Positions center and 24px from right of button. */
 #projects-btn-div {
     height: 40px;
     margin-bottom: 40px;
@@ -309,7 +298,13 @@
     background-position: right 24px center;
     transition: 0.1s ease-in-out;
 }
-
+/* Adjusts width of button for smaller screens (380px wide or less) */
+@media screen and (max-width: 380px) {
+    #projects-btn-div {
+        width: 80dvw;
+    }
+}
+/* Applies scale up 1.02 of button and cursor = pointer when hovering button. Also adds box shadow black with 0.414 opacity */
 #projects-btn-div:hover {
     cursor: pointer;
     transform: scale(1.02);
