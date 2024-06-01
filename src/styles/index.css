@@ -162,3 +162,40 @@ footer {
 .footer-text {
     font-family: var(--font-secondary), sans-serif;
 }
+
+
+/* Styling for footer nav items. Layout row, aligned centre with gap and padding */
+#footer-nav-items {
+    font-family:var(--font-secondary), sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 1.5rem ;
+}
+
+/* Change footer nav items from default to black with no underline and add transition 0.1s ease in out to apply scale transformation on hover */
+#footer-nav-items a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    font-size: 1.2rem;
+}
+
+/* Scale nav item by 1.1 when hovered */
+#footer-nav-items a:hover {
+    transform: scale(1.1);
+}
+
+/* Underlines respective footer nav item when page is active (check html header section) */
+#footer-nav-items a.active {
+    text-decoration: underline;
+}
+
+/* Remove "home" nav item when viewport is 450px or less. User can still use "logo" to navigate home */
+@media screen and (max-width: 450px) {
+    #footer-nav-items a:first-child {
+        display: none;
+    }
+}
