@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title show on webpage tab -->
     <title>Hendric Widjaja | Web Developer</title>
 
     <!-- Link source for 2x google fonts (Poppins & Laquer) -->
@@ -10,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lacquer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <!-- Link index.html to external stylesheets (index.css) -->
+    <!-- Link to respective external stylesheets (index.css) -->
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/home.css">
 
@@ -22,7 +23,9 @@
 
 </head>
 <body>
+    <!-- Container which applies gradient background to body and footer -->
     <div class="page-background">
+    <!-- Navigation bar including logo with "active" styling for current page -->
         <header>
             <div id="logo">
                 <a href="#">:)</a>
@@ -35,6 +38,7 @@
             </nav>
         </header>
         <main>
+            <!-- Hero section including profile picture and "welcome message" and introduction text -->
             <div class="profile">
                 <img src="./images/profile-picture2.jpg" alt="Profile Picture">
             </div>
@@ -48,6 +52,7 @@
                     I consider myself an aspiring <strong>full stack web developer</strong>. Previously a cost planner/contract administrator in the construction industry. I <strong>design</strong>, <strong>manage</strong> and <strong>deliver</strong> projects with <strong>every pixel</strong> in mind. This is a glance at my software development journey so far. If you're interested in working together, have some feedback (or just wanted to say hello) please feel free to reach out, follow me on my socials or get in touch via the links below.
                 </p>
             </article>
+            <!-- Section for testimonials. Includes 4x sample testimonials. Layout uses Grid. Content layout of each "tile" uses flex box. -->
             <section class="review-grid">
                 <section class="testimonial-main-heading">
                     <h2>
@@ -102,6 +107,7 @@
                     </div>
                 </article>
             </section>
+            <!-- Section for Education & Experience. Used "accordion" type layout involving hidden checkbox input to enable "accordion" effect. Can also adjust input type to radio to change "accordion" to only open one tab/label at a time -->
             <section class="education-experience">
                 <section class="education-main-heading">
                     <h2>
@@ -179,6 +185,7 @@
                         <div>
                 </div>
             </section>
+            <!-- Section for buttons to allow user to download CV and/or also view about page -->
             <div class="buttons">
                 <div class="btn-div">
                     <a href="./hw-resume-t1a2.pdf" target="_blank" alt="Download my CV">
@@ -191,6 +198,7 @@
                     </a>
                 </div>
             </div>
+            <!-- Section for user to send a message. Includes 3x labels and 3x text input sections with placeholder text (NOTE: Submit button currently does not complete any action) -->
             <form>
                 <div class="lets-work-heading">
                     <h1>Let's Work Together</h1>
@@ -213,6 +221,7 @@
                 </div>
             </form>
         </main>
+        <!-- Footer section which includes text and icons which links (opens new page) to github, linkedin or open mail app to compose an email  -->
         <footer>
             <div id="footer-logo">
                 <a href="#">:)</a>

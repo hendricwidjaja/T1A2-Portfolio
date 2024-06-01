@@ -125,9 +125,8 @@
     position: relative;
 }
 
-/* end of tech-stack test */
 
-
+/* Styles and aligns headings for blog and playlist section */
 .about-heading {
     display: flex;
     align-items: center;
@@ -249,6 +248,23 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    overflow: hidden;
+}
+
+/* Styling to add album cover at 775px width */
+.text-art-container {
+    display: flex;
+    align-items: center;
+}
+.text-art-container img {
+    height: 80px;
+    padding-left: 0.7rem;
+}
+
+@media screen and (max-width: 775px) {
+    .text-art-container img {
+        display: none;
+    }
 }
 
 .playlist-item img:last-child {

@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lacquer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <!-- Link index.html to external stylesheets (index.css) -->
+    <!-- Link to respective external stylesheets (index.css) -->
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/about.css">
 
@@ -22,9 +22,9 @@
 
 </head>
 <body>
-<!-- Div to apply background to header and main section only -->
+    <!-- Container which applies gradient background to body and footer -->
     <div class="page-background">
-<!-- Logo and nav section -->
+    <!-- Navigation bar including logo with "active" styling for current page -->
     <header>
         <div id="logo">
             <a href="../index.html">:)</a>
@@ -37,7 +37,7 @@
         </nav>
     </header>
     <main>
-<!-- Expertise Section (tile style layout)-->
+<!-- Tech Stack Section using flexbox and media queries content includes images for icons, small description and large heading-->
     <section class="full-stack-section">
         <div class="tech-stack-heading-layout">
             <h1 class="tech-heading">tech</h1>
@@ -72,7 +72,7 @@
             </div>
         </section>
     </section>
-<!-- Blogs Section -->
+<!-- Blogs Section. Includes images for all blog items and text for title and date published -->
         <div class="about-heading">
             <h1>blogs</h1>
             <img src="../images/blogs-icon.svg" alt="Open Book Icon">
@@ -124,51 +124,61 @@
                 </article>
             </a>
         </section>
-<!-- Playlist Section -->
+<!-- Playlist Section. Includes album cover images, text to identify songs and "play button" which links to respective song via spotify share link -->
         <div class="about-heading">
             <h1>playlist</h1>
             <img src="../images/playlist-icon.svg" alt="Play Button Icon">
         </div>
         <section class="playlist">
             <article class="playlist-item">
-                <div class="song-text">
-                    <h2>ten</h2>
-                    <p>Single</p>
-                    <p>FredAgain..., Jozzy, Jim Legxacy</p>
+                <div class="text-art-container">
+                    <img src="../images/ten-fredagain-cover.png" alt="Album cover for ten by fredagain..., Jozzy & Jim Legxacy">                    
+                    <div class="song-text">
+                        <h2>ten</h2>
+                        <p>Single</p>
+                        <p>FredAgain..., Jozzy, Jim Legxacy</p>
+                    </div>
                 </div>
                 <a href="https://open.spotify.com/track/5QOBT97OmYCZo1W5u7tRrB?si=398eca6b8a4d4785" target="_blank" aria-label="Link to ten by FredAgain..., Jozzy & Jim Legxacy">
                     <img class="play-btn" src="../images/circle-play-solid.svg" alt="play button">
                 </a>
             </article>
             <article class="playlist-item">
+                <div class="text-art-container">
+                    <img src="../images/dna-billy-gillies.png" alt="Album cover DNA (Loving You) by Billy Gillies ft Hannah Boleyn"> 
                     <div class="song-text">
                         <h2>dna (loving you)</h2>
                         <p>Single</p>
                         <p>Billy Gillies ft. Hannah Boleyn</p>
                     </div>
-                    <a href="https://open.spotify.com/track/6ibDVMcMUNqZ5eXT9sD4Vy?si=2423f681a8f14da6" target="_blank" aria-label="Link to DNA (Loving You) by Billy Gillies ft. Hannah Boleyn">
-                        <img class="play-btn" src="../images/circle-play-solid.svg" alt="play button">
-                    </a>
+                </div>
+                <a href="https://open.spotify.com/track/6ibDVMcMUNqZ5eXT9sD4Vy?si=2423f681a8f14da6" target="_blank" aria-label="Link to DNA (Loving You) by Billy Gillies ft. Hannah Boleyn">
+                    <img class="play-btn" src="../images/circle-play-solid.svg" alt="play button">
+                </a>
             </article>
             <article class="playlist-item">
-                <div class="song-text">
-                    <h2>yellow</h2>
-                    <p>Single</p>
-                    <p>Lofi Fruits Music, Chill Fruits Music</p>
+                <div class="text-art-container">
+                    <img src="../images/yellow-cover.png" alt="Album cover for Yellow by Lofi Fruits Music & Chill Fruits Music"> 
+                    <div class="song-text">
+                        <h2>yellow</h2>
+                        <p>Single</p>
+                        <p>Lofi Fruits Music, Chill Fruits Music</p>
+                    </div>
                 </div>                  
                 <a href="https://open.spotify.com/track/3S9kCBYnWg7jSSV1XAYL6Q?si=00eb6874422e4622" target="_blank" aria-label="Link to Yellow by Lofi Fruits Music & Chill Fruits Music">
                     <img class="play-btn" src="../images/circle-play-solid.svg" alt="play button">
                 </a>
             </article>
         </section>
+        <!-- Button to take user to next page (Projects page) -->
         <div class="btn-div">
             <a href="./projects.html">
                 <button id="projects-btn-div">See my projects</button>
             </a>
         </div>
     </main>
-<!-- Footer Section -->
-    <footer>
+    <!-- Footer section which includes text and icons which links (opens new page) to github, linkedin or open mail app to compose an email  -->
+        <footer>
         <div id="footer-logo">
             <a href="../index.html">:)</a>
         </div>
