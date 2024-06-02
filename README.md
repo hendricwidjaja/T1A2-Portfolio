@@ -2,6 +2,17 @@
 
 Welcome to the documentation of Hendric Widjaja’s - T1A2: Portfolio Assignment.
 
+# Tech Stack
+The tech stack used to produce this portfolio includes the following:
+- Git
+- GitHub
+- Visual Studio Code
+- Figma
+- Canva
+- HTML
+- CSS
+
+
 # Quick Links
 
 Please use the links below to access the Portofolio Website & respective GitHub Repository:
@@ -17,9 +28,11 @@ Please use the links below to view the wireframes for the Portfolio Website (via
 Please use the link below to view the sitemap for the Portfolio Website (via Canva)
 - [Click here to go to the Canva public view link for the Portfolio Sitemap](https://www.canva.com/design/DAGG64AlKZ4/w3qsl1A4A7-sUO23D39DLQ/view?utm_content=DAGG64AlKZ4&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
-<b>NOTE 1:</b> The sitemap only covers links within the content of each page. All <u>internal</u> links include a navigation bar in both the header and footer to allow the user to switch to any of the core pages from any internal page (see Header & Footer Navigation note on Sitemap). 
+<b>NOTE1:</b> All .png files of the sitemap and wireframes are pasted in this README under the Appendix at the end of this document. The above are only listed to provide an alternative method of viewing these documents.
 
-<b>NOTE 2:</b> Sitemap and all wireframes .png files can also be located in the /docs directory.
+<b>NOTE 2:</b> The sitemap only covers links within the content of each page. All <u>internal</u> links include a navigation bar in both the header and footer to allow the user to switch to any of the core pages from any internal page (see Header & Footer Navigation note on Sitemap). 
+
+<b>NOTE 3:</b> Sitemap and all wireframes .png files can also be located in the /docs directory.
 
 # Purpose
 The purpose of creating this website was to act as a portfolio that can be presented to potential employers to showcase the expertise and experience I have as (an aspiring) full stack web developer and IT professional. This involved providing information regarding my skill set, expertise and qualifications through:
@@ -91,5 +104,126 @@ The main component which assists the viewer to contact the developer is through 
 
 
 # Wireframes
-There are 12x wireframes for each viewport ([mobile](./docs/wireframes-mobile/), [tablet](./docs/wireframes-tablet/) and [laptop](./docs/wireframes-laptop/)). Therefore a total of 36 wireframes were made to provide an idea of how the layout of each component will change when viewing from different viewports. A .png of each wireframe for each viewport can be located in their respective folder within the /docs directory (HendricWidjaja-t1a2/docs). Please view these files in conjunction when reading this wireframes overview.
-![Laptop - home page wireframe](./docs/wireframes-laptop/Laptop%201%20-%20Home.png)
+![Laptop - About page snippet](./docs/about-page-snippet.png)
+
+There are 12x wireframes (created and exported from figma) for each viewport ([mobile](./docs/wireframes-mobile/), [tablet](./docs/wireframes-tablet/) and [laptop](./docs/wireframes-laptop/)). Therefore a total of 36 wireframes were made to provide an idea of how the layout of each component will change when viewing from different viewports. A .png of each wireframe for each viewport can be located in their respective folder within the /docs directory (HendricWidjaja-t1a2/docs). Please view these files in conjunction when reading this wireframes overview.
+
+## Decision Making Process for Overall Aesthetic of Website
+The decision making process of the overall aesthetic of the website can be explained in two main ways. Artistically and functionality. The artistic components aim to grab the viewer's attention while the functionality implemented into the website allow the skills of the developer to be well read and understood.
+
+### Colour Scheme
+The approach for the theme of the website was to provide a sense of balance and neutrality through the black and white colour scheme with splashes of colour to draw attention to key information and content. The usage of a black and white colour scheme also creates endless possibilities for various contrasting text/background combinations. 
+![Colorkit - contrast checker (Black & White)](./docs/colorkit/Black-white-contrast-checker.png)
+<i>Colorkit - contrast checker (Black & White)</i>
+![Colorkit - contrast checker (Darkblue & White)](./docs/colorkit/darkblue-white-contrast-checker.png)
+<i>Colorkit - contrast checker (Dark blue & White)</i>
+![Colorkit - contrast checker (Deep Blue & White)](./docs/colorkit/deepblue-white-contrast-checker.png)
+<i>Colorkit - contrast checker (Deep Blue & White)</i>
+![Colorkit - contrast checker (Light Blue & Black)](./docs/colorkit/Lightblue-black-contrast-checker.png)
+<i>Colorkit - contrast checker (Light Blue & Black)</i>
+![Colorkit - contrast checker (Yellow & Black)](./docs/colorkit/yellow-black-contrast-checker.png)
+<i>Colorkit - contrast checker (Yellow & Black)</i>
+
+The above colours were able to match perfect scores as backgrounds when contrasted with black and white fonts. These background colours were effortlessly chosen by using an eyedropper tool (via figma) on the profile image of the developer seen at the top of the home page and were utilised for the testimonial section right underneath the hero-introduction text.
+
+The above is just one example of why the decision on a black and white theme was chosen to add both aesthetics and functionality to the website.
+
+### Fonts
+Other components such as the contrast between the two fonts used (one for grabbing attention and the other for readability) was also considered when going through the design process of the website. The "Lacquer" font is defined by google as "an expressive display" font which was created by [Niki Polyocan & Eli Block](https://fonts.google.com/specimen/Lacquer/about) with the use of a paint pen and their own hands. In contrast, the "Poppins" font which was designed by [Indian Type Foundry, Johnny Pinhorn & Ninad Kale](https://fonts.google.com/specimen/Poppins/about?query=poppins) is featured in more than 23 million websites and is commonly used due to it's legibility and accessibility. The contrast in these fonts provides a more interesting and fun aesthetic to the website, all while still being able to clearly illustrate the main content and information. 
+
+### Layout (Tiles)
+The website utilises a tile layout for many of its sections. This decision was made to further accentuate the idea of the webpage being a blank canvas and allows the viewer to see various components that have pops of colour and shadows. This attempts to prompt the user to interact with the website and hover/click over various components (particularly in the home and about page where there are multiple components on each page). While going through the website, the viewer will notice that there are even multiple components which include animations purely for aesthetics. The plethora of animations produces a website which almost feels "alive" and invites the viewer to discover directly (and indirectly) more about the developer skills and experience.
+
+In addition to the tile layouts, the content on each page is generally centre focussed/aligned to provide a modern look and to draw attention to the content against the blank white/grey webpage background colour (particularly on larger viewports). 
+
+With all the above, the aesthetic of the website aims to provide the idea to the viewer that the developer has a wide range of skills and highly capable in web development.
+
+# Functionality & Features
+
+
+
+
+
+# Appendix
+
+## Sitemap
+![Sitemap](./docs/hendricwidjaja-t1a2-sitemap.png)
+
+## Wireframes
+
+### Mobile
+![Mobile - Home Page](./docs/wireframes-mobile/Mobile%201%20-%20Home.png)
+
+![Mobile - About Page](./docs/wireframes-mobile/Mobile%202%20-%20About.png)
+
+![Mobile - Blog 1 Page](./docs/wireframes-mobile/Mobile%203%20-%20Blog%201.png)
+
+![Mobile - Blog 2 Page](./docs/wireframes-mobile/Mobile%204%20-%20Blog%202.png)
+
+![Mobile - Blog 3 Page](./docs/wireframes-mobile/Mobile%205%20-%20Blog%203.png)
+
+![Mobile - Blog 4 Page](./docs/wireframes-mobile/Mobile%204%20-%20Blog%202.png)
+
+![Mobile - Blog 5 Page](./docs/wireframes-mobile/Mobile%205%20-%20Blog%203.png)
+
+![Mobile - Projects Page](./docs/wireframes-mobile/Mobile%208%20-%20Projects.png)
+
+![Mobile - Project 1 Page](./docs/wireframes-mobile/Mobile%209%20-%20Project%201.png)
+
+![Mobile - Project 2 Page](./docs/wireframes-mobile/Mobile%2010%20-%20Project%202.png)
+
+![Mobile - Project 3 Page](./docs/wireframes-mobile/Mobile%2011%20-%20Project%203.png)
+
+![Mobile - Contact Page](./docs/wireframes-mobile/Mobile%2012%20-%20Contact.png)
+
+### Tablet
+![Tablet - Home Page](./docs/wireframes-tablet/Tablet%201%20-%20Home.png)
+
+![Tablet - About Page](./docs/wireframes-tablet/Tablet%202%20-%20About.png)
+
+![Tablet - Blog 1 Page](./docs/wireframes-tablet/Tablet%203%20-%20Blog%201.png)
+
+![Tablet - Blog 2 Page](./docs/wireframes-tablet/Tablet%204%20-%20Blog%202.png)
+
+![Tablet - Blog 3 Page](./docs/wireframes-tablet/Tablet%205%20-%20Blog%203.png)
+
+![Tablet - Blog 4 Page](./docs/wireframes-tablet/Tablet%206%20-%20Blog%204.png)
+
+![Tablet - Blog 5 Page](./docs/wireframes-tablet/Tablet%207%20-%20Blog%205.png)
+
+![Tablet - Projects Page](./docs/wireframes-mobile/Mobile%208%20-%20Projects.png)
+
+![Tablet - Project 1 Page](./docs/wireframes-tablet/Tablet%209%20-%20Project%201.png)
+
+![Tablet - Project 2 Page](./docs/wireframes-tablet/Tablet%2010%20-%20Project%202.png)
+
+![Tablet - Project 3 Page](./docs/wireframes-tablet/Tablet%2011%20-%20Project%203.png)
+
+![Tablet - Contact Page](./docs/wireframes-tablet/Tablet%2012%20-%20Contact.png)
+
+### Laptop
+![Laptop - Home Page](./docs/wireframes-laptop/Laptop%201%20-%20Home.png)
+
+![Laptop - About Page](./docs/wireframes-laptop/Laptop%202%20-%20About.png)
+
+![Laptop - Blog 1 Page](./docs/wireframes-laptop/Laptop%203%20-%20Blog%201.png)
+
+![Laptop - Blog 2 Page](./docs/wireframes-laptop/Laptop%204%20-%20Blog%202.png)
+
+![Laptop - Blog 3 Page](./docs/wireframes-laptop/Laptop%205%20-%20Blog%203.png)
+
+![Laptop - Blog 4 Page](./docs/wireframes-laptop/Laptop%206%20-%20Blog%204.png)
+
+![Laptop - Blog 5 Page](./docs/wireframes-laptop/Laptop%207%20-%20Blog%205.png)
+
+![Laptop - Projects Page](./docs/wireframes-laptop/Laptop%208%20-%20Projects.png)
+
+![Laptop - Project 1 Page](./docs/wireframes-laptop/Laptop%209%20-%20Project%201.png)
+
+![Laptop - Project 2 Page](./docs/wireframes-laptop/Laptop%2010%20-%20Project%202.png)
+
+![Laptop - Project 3 Page](./docs/wireframes-laptop/Laptop%2011%20-%20Project%203.png)
+
+![Laptop - Contact Page](./docs/wireframes-laptop/Laptop%2012%20-%20Contact.png)
+
+# End of Document
