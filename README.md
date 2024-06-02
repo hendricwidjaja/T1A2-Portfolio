@@ -34,7 +34,7 @@ It was also important to show employers content regarding my personality and int
 
 # Sitemap
 ![hendricwidjaja-t1a2-sitemap](./docs/hendricwidjaja-t1a2-sitemap.png)
-This sitemap was created using canva to 
+This sitemap was created using canva to highlight how all internal and external pages link within the portfolio website. Before explaining the structure, here i
 
 ## Structure
 The 
