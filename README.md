@@ -31,3 +31,15 @@ It was also important to show employers content regarding my personality and int
 - Website theme/style
 - Text content
 - Miscellaneous (e.g. playlist)
+
+# Sitemap
+![hendricwidjaja-t1a2-sitemap](./docs/hendricwidjaja-t1a2-sitemap.png)
+This sitemap was created using canva to 
+
+## Structure
+The 
+
+
+# Wireframes
+There are 12x wireframes for each viewport ([mobile](./docs/wireframes-mobile/), [tablet](./docs/wireframes-tablet/) and [laptop](./docs/wireframes-laptop/)). Therefore a total of 36 wireframes were made to provide an idea of how the layout of each component will change when viewing from different viewports. A .png of each wireframe for each viewport can be located in their respective folder within the /docs directory (HendricWidjaja-t1a2/docs). Please view these files in conjunction when reading this wireframes overview.
+![Laptop - home page wireframe](./docs/wireframes-laptop/Laptop%201%20-%20Home.png)
