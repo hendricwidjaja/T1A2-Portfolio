@@ -15,7 +15,7 @@ The tech stack used to produce this portfolio includes the following:
 
 # Quick Links
 
-Please use the links below to access the Portofolio Website & respective GitHub Repository:
+Please use the links below to access the Portfolio Website & respective GitHub Repository:
 
 - [Click here to go to the published portfolio website](https://hendric-widjaja-t1a2-portfolio.netlify.app/)
 - [Click here to go to the GitHub repository for HendricWidjaja_T1A2](https://github.com/hendricwidjaja/HendricWidjaja_T1A2)
@@ -36,7 +36,7 @@ Please use the link below to view the sitemap for the Portfolio Website (via Can
 
 # Purpose
 The purpose of creating this website was to act as a portfolio that can be presented to potential employers to showcase the expertise and experience I have as (an aspiring) full stack web developer and IT professional. This involved providing information regarding my skill set, expertise and qualifications through:
-- Work Experience (Link to Resume/CV)
+- Work Experience (with link to Resume/CV)
 - Educational History
 - Completed/in progress projects
 - Testimonials
@@ -81,11 +81,13 @@ This sitemap was created using canva to highlight how all internal and external 
 The structure of the website can be separated into 3x sections. "Core content" found on the main pages (top & second level), supplementary content which are links found on the main pages (third level) & external links.
 
 The general structure of the website allows easy navigation for the user between the four main pages (Home, About, Projects & Contact) through the use of the navigation bar at the header and footer. The user is also exposed to the links for secondary pages such as blog pages and project pages. Each of these secondary pages has internal links in its body to prompt the user to either go back or forth between secondary pages and prompting them to move on to the next main page once they have consumed all secondary pages.
+
 ![Previous & Next Project Button](/docs/snippets/prev-next-btns.png)
+
 <i>Previous & Next Project buttons seen on secondary webpage (Terminal Application)</i>
 
 
-The target audience of this website are for employers who are looking to engage a dev and/or IT professional. Therefore, it is critical that the website not only displays content that protrays the skills and professional knowledge the employer is looking for, but the structure of the website should also aim to get the employer to start a conversation with the developer. The structure aims to do this in three main ways.
+The target audience of this website are for employers who are looking to engage a dev and/or IT professional. Therefore, it is critical that the website not only displays content that portrays the skills and professional knowledge the employer is looking for, but the structure of the website should also aim to get the employer to start a conversation with the developer. The structure aims to do this in three main ways.
 
 ### Path to the Contact Page
 Firstly, the structure of the website allows the viewer to navigate to the contact page without having to use the navigation bar. Each page leads to the next, until the viewer either downloads the developer's CV or contacts them via the contact form. This is done by attempting to have the viewer complete these actions at the end of the first page, right after they see the developers experience, education and testimonials. If the viewer was not yet convinced, the website prompts the viewer to find out more about the developer through internal links generally right after the main content of each page. This will continue as the viewer sees the developers about page, projects and finally ends up at the contact page. This structure ensures that the viewer will see a call of action to contact the developer at least once throughout their time on the website.
@@ -97,6 +99,7 @@ The home page is key in drawing in the attention of the viewer.
 The website's home page is structured with a large 'hero' area to help draw in the attention of the viewer. The hero area provides a brief portion of text which bold key words that an employer would be looking for. Once the viewer's attention is caught, they are shortly greeted by a grid of testimonials. Gaining the trust of the viewer provides the ability to have a better chance of them reaching out and conducting business with the developer. Various reports (such as the one linked [here](https://au.business.trustpilot.com/guides-reports/build-trusted-brand/why-and-how-social-proof-influences-consumers)) suggests that consumers solely relied on advertisements and word of mouth in the past, however in today's time, social proof is the key driver is gaining a customers trust. 
 
 !["The most Effective Trust Signals Survey Results - sourced from Trustpilot, "The Psychology behind trust signals: Why and how social proof influences consumers" - dated 13th September 2019](./docs/snippets/bar-graph-src-trustpilot.png)
+
 <i>The most Effective Trust Signals Survey Results - sourced from Trustpilot, "The Psychology behind trust signals: Why and how social proof influences consumers" - dated 13th September 2019</i>
 
 In the above article, it was noted that in a survey of more than 1600 people (150 of who lived in Australia), approximately 98% of buyers would be more interested in purchasing with a provider if they can recognise at least one trust signal. Additionally more than 60% of those surveyed advised that they were more likely to purchase due to the trust signal/s they identified. The most positively deemed trust signal was highly rated ratings and reviews. Providing social proof at the beginning of the home page with glowing reviews of the developer's work allows the viewer to gain a sense of trust even before they've started scrolling, allowing the rest of their time on the website to be more positive. 
@@ -105,7 +108,7 @@ In the above article, it was noted that in a survey of more than 1600 people (15
 Although there are external links that can be found throughout the website, these are kept to a minimal and can only be seen in a small section of the about page (playlist section). The remainder of the website attempts to keep the viewer engaged by leading them to the next page of content and information. To ensure that attention is retained, all external links have used (target="_blank") to make external links open on new tabs. This increases the chance that the website does not close and lose the attention of the viewer.
 
 ### Contactability
-The main component which assists the viewer to contact the developer is through the accessiblity of the contact page in the header/navigation bar and the social media icons found in the footer. For every page the viewer reaches the end of, the links to the developer's social media and email account is seen in the footer to make it easier for the viewer to contact the dev. Not only this, but there are various points throughout the website which calls the viewer to action and contact the developer. This is noted in the homepage introduction paragraph, as well as the secondary contact form found at the bottom of the homepage titled "Let's Work Together". 
+The main component which assists the viewer to contact the developer is through the accessibility of the contact page in the header/navigation bar and the social media icons found in the footer. For every page the viewer reaches the end of, the links to the developer's social media and email account is seen in the footer to make it easier for the viewer to contact the dev. Not only this, but there are various points throughout the website which calls the viewer to action and contact the developer. This is noted in the homepage introduction paragraph, as well as the secondary contact form found at the bottom of the homepage titled "Let's Work Together". 
 
 
 # Wireframes
@@ -139,6 +142,7 @@ Other components such as the contrast between the two fonts used (one for grabbi
 ### Layout (Tiles)
 The website utilises a tile layout for many of its sections. This decision was made to further accentuate the idea of the webpage being a blank canvas and allows the viewer to see various components that have pops of colour and shadows. This attempts to prompt the user to interact with the website and hover/click over various components (particularly in the home and about page where there are multiple components on each page). While going through the website, the viewer will notice that there are even multiple components which include animations purely for aesthetics. The plethora of animations produces a website which almost feels "alive" and invites the viewer to discover directly (and indirectly) more about the developer skills and experience.
 
+### Centre Aligned Content
 In addition to the tile layouts, the content on each page is generally centre focussed/aligned to provide a modern look and to draw attention to the content against the blank white/grey webpage background colour (particularly on larger viewports). 
 
 With all the above, the aesthetic of the website aims to provide the idea to the viewer that the developer has a wide range of skills and highly capable in web development.
@@ -190,10 +194,23 @@ In addition to functionality, the website also includes components which provide
 
 The above are just a few examples of CSS which is utilised within this website. The below will highlight key components within the website which creates functionality and engagement from the viewer.
 
+## Navigation Bar (Header)
+
+![Navigation Bar Snippet](./docs/snippets/Functionality/header/header.png)
+
+The navigation is in a sense the most basic but most important function of each page of the website. The navigation bar allows the user to navigate their way through the content of the website. The navigation utilises a logo using the main heading font (Lacquer) as a smiley face emoji ":)" and is sibling to another flex container which contains the 4x navigation items. These navigation items are "a" tags which link to the core pages of the website. The children are wrapped in a flexbox container which uses justify content: space-between to spread the logo and navigation items apart (logo on the left corner, navigation items on the right corner).
+
+![Body CSS](./docs/snippets/Functionality/header/body-CSS-header.png)
+
+The above CSS also adjusts the body content (header, body, footer) to display in a column. It also uses justify-content: space-between to ensure the header stays at the top, the footer stays at the bottom, and the body content stays in between. Min-height: 100svh (small viewport height) ensures that the content of the website does not get cut off by any search bars when viewing the website on mobile phone browsers.
+
+The navigation bar also utilises simple but functional styling which allows the user to understand where they are on the website based off the "active" class which underlines the navigation item the page is on. The subtle animations also provide engagement from the viewer.
+
+
 ## Hero Section
 
 ![Hero-Section](./docs/snippets/Functionality/hero/hero-section-wide.png)
-The hero section is defined as the main top section of the home page. This introduces the viewer to the developer. This sections acts to be engaging and provides the first impression for the viewer.
+The hero section is defined as the main top section of the home page. This introduces the viewer to the developer. This section acts to be engaging and provides the first impression for the viewer.
 To create maximum engagement from the beginning, a large introduction heading is included where the developer is introducing themself to the viewer. This section utilises:
 - A large colourful profile picture which contrasts against the white/grey background of the webpage
     - This image is also styled with a border to increase contrast and includes animations on hover with box shadows and scale.
@@ -215,7 +232,14 @@ This use of flexbox and animations is a perfect example of a component which is 
 ## Accordion
 ![Accordion component snippet](./docs/snippets/Functionality/accordion/accordion-work.png)
 
-The accordion componenet which is located on the home page provides curiosity and invites viewer engagement to discover information regarding the developer. The accordion enables interactivity by requiring the viewer to click the labels of "Work Experience" and "Education" to unveil the information.
+The accordion component which is located on the home page provides curiosity and invites viewer engagement to discover information regarding the developer. The accordion enables interactivity by requiring the viewer to click the labels of "Work Experience" and "Education" to unveil the information.
+
+The accordion is incorporated by utilising a variety of CSS which primarily operates on a label with a check/uncheck input from the user. It also involves hiding elements when it's respective label is "unchecked" as well as hiding the checkbox itself. 
+It also involves pseudo class elements (::after) to provide cosmetic styling for the up and down triangle to indicate whether the label has been checked/unchecked.
+
+![Accordion CSS snippet](./docs/snippets/Functionality/accordion/accordion-css-snippet.png)
+
+The level of interactivity in this component creates clear engagement from the user and also demonstrates a level of knowledge to the viewer. The content included in this component is also displayed clearly with the involvement of background images contrasted with black text on white background in a tile formation.
 
 ## Testimonial Grid
 ![Testimonial Grid Snippet](./docs/snippets/Functionality/review-grid/review-grid-wide.png)
@@ -230,31 +254,46 @@ Flexbox (content):
 - The reviewer's details is also a flexbox which contains 2x children (1x image and another flexbox container which holds the reviewer's name and job title). This flexbox allows us to align the profile image of the reviewer and their details neatly in a row and to stay contained.
 - The final inner flexbox which holds the reviewer's name and job title is used to similarly contain and neatly place the reviewers name on top of their job title using flex-direction: column.
 
-The flexibility with these containers means that it is very possible to adjust the alignment of the content within the "review tile" to a diffent layout if needed. An example of this would be if the developer decided to include a "skinnier" review tile on the grid layout, it might be best to use flex-direction column for the 'reviewer's details' to allow the reviewer's profile image to appear above their name and job title.
+The flexibility with these containers means that it is very possible to adjust the alignment of the content within the "review tile" to a different layout if needed. An example of this would be if the developer decided to include a "skinnier" review tile on the grid layout, it might be best to use flex-direction column for the 'reviewer's details' to allow the reviewer's profile image to appear above their name and job title.
 
 
 ![Grid Testimonial CSS Snippet](./docs/snippets/Functionality/review-grid/grid-template-area.png)
 
 Grid:
-CSS Grid is used to provide an eye catching layout which is still clear and easily portrays the information of each review to the viewer.
+CSS Grid is used to provide an eye-catching layout which is still clear and easily portrays the information of each review to the viewer.
 - A grid template area is first used to provide simple rows (4x) for smaller viewports and each 'review-tile' or reviewer is allocated a specific grid area (one, two, three or four). This allows high visibility for smaller viewports.
 - When users use larger viewports (above 699px), the below media query allows each 'review-tile' to span across the grid as per their allocation in the 'grid-template'areas'
 ![Grid Testimonial CSS Snippet Part 2](./docs/snippets/Functionality/review-grid/media-query-grid.png)
 
 This provides a more engaging and interesting experience for the viewer to consume the content.
 
-In regards to its styling, the testimonial grid incorporates a wide range of styling and animations to engage the viewer. The three main characteristics invovle:
+In regards to its styling, the testimonial grid incorporates a wide range of styling and animations to engage the viewer. The three main characteristics involve:
 - Clear contrast of text and background colours which also match the image in the hero profile image
 - The inclusion of a pseudo element to create the quotation styling on the 1st and 4th 'review tile'
 - Animations on hover with box shadow and slight scaling.
 
-The inclusion of the pseudo element ::after involves applying a 'virtual' element that gets added "after" the last child of the selected class. We firstly need to ensure that the parent class is position: relative to allow the pseudo element to be absolute relative to the parent. By adding the quotation mark image as a background image and definiing its position we are able to dictate the positioning of the ::after element in relation to the "review-tile". 
-Adding elements such as the above provide an eye catching characteristic to the componenet and adds to viewer engagement.
+The inclusion of the pseudo element ::after involves applying a 'virtual' element that gets added "after" the last child of the selected class. We firstly need to ensure that the parent class is position: relative to allow the pseudo element to be absolute relative to the parent. By adding the quotation mark image as a background image and defining its position we are able to dictate the positioning of the ::after element in relation to the "review-tile". 
+Adding elements such as the above provide an eye catching characteristic to the component and adds to viewer engagement.
 
 The animations on :hover (a common characteristic added to many components across the website) further adds to the reactivity of the website and invites engagement by the reader.
 
 ## Projects Image Overlay
+![Project Page Snippet](./docs/snippets/Functionality/projects/projects-flex-text-overlay.png)
 
+The last key component which will be discussed in this README is the project's page use of Image overlay on each "project tile" and flexbox. A simple use of flex-wrap: wrap allows these tiles to remain in relatively neat and visible positions on screen whether on mobile (1x tile per row) or laptops (approximately 3x tiles per row). Flexbox creates functionality in this component and allows user visibility from various viewports.
+
+The image overlay styling creates an interactive tile for the user to discover a short blurb regarding the project before clicking on the "Click for more" button which leads them to the project page. This effect and animation creates curiosity and interest from the user through the interactivity of the tile and its styling. 
+
+![Click for more animation CSS](./docs/snippets/Functionality/projects/projects-clickformore-CSS.png)
+
+The styling of the "Click for more" button involves an animation (titled "breathe" within the CSS file). This involves transforming the scale of the button to slightly increase and decrease over a span of 0.3s. Animations such as this give the website a more animated feel rather than one which is static/still. 
+
+The image overlay is based off an image which helps portray the project, all while there is hidden text with 0 opacity. When the user hovers over the tile area, the :hover class activates and changes the opacity to 1. In addition to this, the resting position of the hidden text is offset (20px) from the centre position. The addition of a translateY(0px) on hover provides a smooth and snappy animation to make the hidden text appear as if it "slid" into position from thin air.
+
+The image overlay creates a level of curiosity and fun way for the user to interact with the website and explore more content regarding the developer.
+
+# Conclusion
+In conclusion, the portfolio website has attempted to target employers who are looking for IT professionals and web developers by providing content about the developer in an engaging and functional manner. This is done by utilising various layouts and tools such as flexbox and grid. The use of animations, through hover classes and animations, as well as a theme which allows various contrasting colours for text and backgrounds, creating a truly dynamic website.
 
 
 # Appendix
