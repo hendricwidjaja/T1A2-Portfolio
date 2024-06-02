@@ -48,8 +48,8 @@ It was also important to show employers content regarding my personality and int
 - Miscellaneous (e.g. playlist)
 
 # Sitemap
-![hendricwidjaja-t1a2-sitemap](./docs/hendricwidjaja-t1a2-sitemap.png)
-This sitemap was created using canva to highlight how all internal and external pages link within the portfolio website. Before explaining the structure, here is a detailed list of each page.
+![hendricwidjaja-t1a2-sitemap](./docs/snippets/hendricwidjaja-t1a2-sitemap.png)
+This sitemap was created using canva to highlight how all internal and external pages link within the portfolio website. Before explaining the structure any further, here is a detailed list of each page.
 
 - <b>Internal Pages</b>
     - Home Page
@@ -80,18 +80,23 @@ This sitemap was created using canva to highlight how all internal and external 
 ## Structure
 The structure of the website can be separated into 3x sections. "Core content" found on the main pages (top & second level), supplementary content which are links found on the main pages (third level) & external links.
 
+The general structure of the website allows easy navigation for the user between the four main pages (Home, About, Projects & Contact) through the use of the navigation bar at the header and footer. The user is also exposed to the links for secondary pages such as blog pages and project pages. Each of these secondary pages has internal links in its body to prompt the user to either go back or forth between secondary pages and prompting them to move on to the next main page once they have consumed all secondary pages.
+![Previous & Next Project Button](/docs/snippets/prev-next-btns.png)
+<i>Previous & Next Project buttons seen on secondary webpage (Terminal Application)</i>
+
+
 The target audience of this website are for employers who are looking to engage a dev and/or IT professional. Therefore, it is critical that the website not only displays content that protrays the skills and professional knowledge the employer is looking for, but the structure of the website should also aim to get the employer to start a conversation with the developer. The structure aims to do this in three main ways.
 
 ### Path to the Contact Page
 Firstly, the structure of the website allows the viewer to navigate to the contact page without having to use the navigation bar. Each page leads to the next, until the viewer either downloads the developer's CV or contacts them via the contact form. This is done by attempting to have the viewer complete these actions at the end of the first page, right after they see the developers experience, education and testimonials. If the viewer was not yet convinced, the website prompts the viewer to find out more about the developer through internal links generally right after the main content of each page. This will continue as the viewer sees the developers about page, projects and finally ends up at the contact page. This structure ensures that the viewer will see a call of action to contact the developer at least once throughout their time on the website.
 
 ### Early Visible Testimonials
-![Snippet of Portfolio Home Page](./docs/portfolio-home-snippet.png)
+![Snippet of Portfolio Home Page](./docs/snippets/portfolio-home-snippet.png)
 
 The home page is key in drawing in the attention of the viewer.
 The website's home page is structured with a large 'hero' area to help draw in the attention of the viewer. The hero area provides a brief portion of text which bold key words that an employer would be looking for. Once the viewer's attention is caught, they are shortly greeted by a grid of testimonials. Gaining the trust of the viewer provides the ability to have a better chance of them reaching out and conducting business with the developer. Various reports (such as the one linked [here](https://au.business.trustpilot.com/guides-reports/build-trusted-brand/why-and-how-social-proof-influences-consumers)) suggests that consumers solely relied on advertisements and word of mouth in the past, however in today's time, social proof is the key driver is gaining a customers trust. 
 
-!["The most Effective Trust Signals Survey Results - sourced from Trustpilot, "The Psychology behind trust signals: Why and how social proof influences consumers" - dated 13th September 2019](./docs/bar-graph-src-trustpilot.png)
+!["The most Effective Trust Signals Survey Results - sourced from Trustpilot, "The Psychology behind trust signals: Why and how social proof influences consumers" - dated 13th September 2019](./docs/snippets/bar-graph-src-trustpilot.png)
 <i>The most Effective Trust Signals Survey Results - sourced from Trustpilot, "The Psychology behind trust signals: Why and how social proof influences consumers" - dated 13th September 2019</i>
 
 In the above article, it was noted that in a survey of more than 1600 people (150 of who lived in Australia), approximately 98% of buyers would be more interested in purchasing with a provider if they can recognise at least one trust signal. Additionally more than 60% of those surveyed advised that they were more likely to purchase due to the trust signal/s they identified. The most positively deemed trust signal was highly rated ratings and reviews. Providing social proof at the beginning of the home page with glowing reviews of the developer's work allows the viewer to gain a sense of trust even before they've started scrolling, allowing the rest of their time on the website to be more positive. 
@@ -104,7 +109,7 @@ The main component which assists the viewer to contact the developer is through 
 
 
 # Wireframes
-![Laptop - About page snippet](./docs/about-page-snippet.png)
+![Laptop - About page snippet](./docs/snippets/about-page-snippet.png)
 
 There are 12x wireframes (created and exported from figma) for each viewport ([mobile](./docs/wireframes-mobile/), [tablet](./docs/wireframes-tablet/) and [laptop](./docs/wireframes-laptop/)). Therefore a total of 36 wireframes were made to provide an idea of how the layout of each component will change when viewing from different viewports. A .png of each wireframe for each viewport can be located in their respective folder within the /docs directory (HendricWidjaja-t1a2/docs). Please view these files in conjunction when reading this wireframes overview.
 
@@ -139,15 +144,123 @@ In addition to the tile layouts, the content on each page is generally centre fo
 With all the above, the aesthetic of the website aims to provide the idea to the viewer that the developer has a wide range of skills and highly capable in web development.
 
 # Functionality & Features
+The website contains various components which utilises Flexbox as well as Grid to create a wide range of functional web page elements that provide an ideal layout for the viewer based off the viewport being used. These functions are further explained within the comments of the html and css documents in the src directory, but are listed below for further detail:
+- CSS Grid:
+    - grid-area:
+    - grid-template-areas: 
+    - gap;
+
+- CSS Flexbox:
+    - Flex-direction: row (default), column;
+    - Justify content: center, space-between;
+    - Align items: center;
+    - gap;
+
+- General Functionality:
+    - dvw / dvh / svh
+
+- Media Queries
+    - @media screen and (min/max-width: )
+
+In addition to functionality, the website also includes components which provide various styles to help engage the audience and bring their attention to the information being displayed.
+- General Styling
+    - Font family, size, weight;
+    - margin, padding, width, height;
+    - box-shadows
+    - border / border-radius
+    - text-shadows
+    - text-decoration
+    - background-color / background-image
+    - Opacity
+- Positioning
+    - top, right, bottom, left;
+    - Position: absolute, relative;
+- Pseudo Elements::after;
+- Transformations
+    - scale
+    - translate
+    - rotate
+- Transitions
+    - ease-in-out
+- Selectors
+    - :hover
+    - nth-child()
+- Animations
+    - @keyframes { from { } to { } }
+
+The above are just a few examples of CSS which is utilised within this website. The below will highlight key components within the website which creates functionality and engagement from the viewer.
+
+## Hero Section
+
+![Hero-Section](./docs/snippets/Functionality/hero/hero-section-wide.png)
+The hero section is defined as the main top section of the home page. This introduces the viewer to the developer. This sections acts to be engaging and provides the first impression for the viewer.
+To create maximum engagement from the beginning, a large introduction heading is included where the developer is introducing themself to the viewer. This section utilises:
+- A large colourful profile picture which contrasts against the white/grey background of the webpage
+    - This image is also styled with a border to increase contrast and includes animations on hover with box shadows and scale.
+    - The use of box shadows provides the image with a 3D effect and invites the viewer to hover their mouse over the image.
+    - The inclusion of high contrast and hover animations aims to invite engagement with the viewer from the start.
+- The large artistic font used for the hero heading, saying "Hi" to the user.
+    - Creates a welcoming environment which invites the user to the website to explore.
+    - The use of animation on hover for this text is as included to follow up from the hover animations from the profile image.
+    - The intro heading text is contained by flexbox and is split into 3x children (h1) which allows the scale and translateY to provide a "wavy" effect when the viewer drags their mouse across the words.
+- A brief but noticeable introduction text that introduces the developer to the viewer is also included in the hero section.
+    - This text uses 'strong' styling to key words to subtly grab the readers attention and provide key information to the viewer.
+
+![Hero-Section](./docs/snippets/Functionality/hero/hero-section-media.png)
+
+The hero section also applies functional properties through the use of flexbox to adjust the content's position based off the viewer's screen size. Through the use of media queries (in this case, for when the width of the viewport is less than 699px) the hero section adjusts to the left of the page and the animations change from 'translateY' (vertically) to 'translate' (horizontally). This allows engagement to still occur on smaller screens but in a more subtle and phone friendly way.
+    
+This use of flexbox and animations is a perfect example of a component which is functional and engaging for the viewer. 
+
+## Accordion
+![Accordion component snippet](./docs/snippets/Functionality/accordion/accordion-work.png)
+
+The accordion componenet which is located on the home page provides curiosity and invites viewer engagement to discover information regarding the developer. The accordion enables interactivity by requiring the viewer to click the labels of "Work Experience" and "Education" to unveil the information.
+
+## Testimonial Grid
+![Testimonial Grid Snippet](./docs/snippets/Functionality/review-grid/review-grid-wide.png)
+
+The testimonial grid is a key component on the home page as it's information plays a key role in winning the trust of the viewer.
+Because of this, it is crucial that the testimonies are displayed clearly, are eye-catching and have great functionality across all viewports.
+
+![Testimonial Grid HTML](./docs/snippets/Functionality/review-grid/review-grid-html.png)
+For its functionality, this component used a mixture of both flexbox (content within each testimonial "tile") and CSS Grid (brick layout). 
+Flexbox (content):
+- As seen in the above html snippet, each "review tile" (flex-review-content) acts as a flexbox container, which contains 2x children (1x flexbox container and 1x paragraph). This review tile allows us to place the "reviewer-details" neatly aligned on top of their review (paragraph text).
+- The reviewer's details is also a flexbox which contains 2x children (1x image and another flexbox container which holds the reviewer's name and job title). This flexbox allows us to align the profile image of the reviewer and their details neatly in a row and to stay contained.
+- The final inner flexbox which holds the reviewer's name and job title is used to similarly contain and neatly place the reviewers name on top of their job title using flex-direction: column.
+
+The flexibility with these containers means that it is very possible to adjust the alignment of the content within the "review tile" to a diffent layout if needed. An example of this would be if the developer decided to include a "skinnier" review tile on the grid layout, it might be best to use flex-direction column for the 'reviewer's details' to allow the reviewer's profile image to appear above their name and job title.
 
 
+![Grid Testimonial CSS Snippet](./docs/snippets/Functionality/review-grid/grid-template-area.png)
+
+Grid:
+CSS Grid is used to provide an eye catching layout which is still clear and easily portrays the information of each review to the viewer.
+- A grid template area is first used to provide simple rows (4x) for smaller viewports and each 'review-tile' or reviewer is allocated a specific grid area (one, two, three or four). This allows high visibility for smaller viewports.
+- When users use larger viewports (above 699px), the below media query allows each 'review-tile' to span across the grid as per their allocation in the 'grid-template'areas'
+![Grid Testimonial CSS Snippet Part 2](./docs/snippets/Functionality/review-grid/media-query-grid.png)
+
+This provides a more engaging and interesting experience for the viewer to consume the content.
+
+In regards to its styling, the testimonial grid incorporates a wide range of styling and animations to engage the viewer. The three main characteristics invovle:
+- Clear contrast of text and background colours which also match the image in the hero profile image
+- The inclusion of a pseudo element to create the quotation styling on the 1st and 4th 'review tile'
+- Animations on hover with box shadow and slight scaling.
+
+The inclusion of the pseudo element ::after involves applying a 'virtual' element that gets added "after" the last child of the selected class. We firstly need to ensure that the parent class is position: relative to allow the pseudo element to be absolute relative to the parent. By adding the quotation mark image as a background image and definiing its position we are able to dictate the positioning of the ::after element in relation to the "review-tile". 
+Adding elements such as the above provide an eye catching characteristic to the componenet and adds to viewer engagement.
+
+The animations on :hover (a common characteristic added to many components across the website) further adds to the reactivity of the website and invites engagement by the reader.
+
+## Projects Image Overlay
 
 
 
 # Appendix
 
 ## Sitemap
-![Sitemap](./docs/hendricwidjaja-t1a2-sitemap.png)
+![Sitemap](./docs/snippets/hendricwidjaja-t1a2-sitemap.png)
 
 ## Wireframes
 
