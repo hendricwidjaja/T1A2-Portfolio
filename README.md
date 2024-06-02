@@ -14,6 +14,11 @@ Please use the links below to view the wireframes for the Portfolio Website (via
 - [Tablet View - iPad Pro 11"](https://www.figma.com/proto/cvTiWqzyS9wXXfKHesrNJt/T1A2%3A-Portfolio?node-id=107-492&t=VoGTyJiuwAJxmtRi-1)
 - [Laptop View - Macbook Air](https://www.figma.com/proto/cvTiWqzyS9wXXfKHesrNJt/T1A2%3A-Portfolio?node-id=107-493&t=VoGTyJiuwAJxmtRi-1)
 
+Please use the link below to view the sitemap for the Portfolio Website (via Canva)
+- [Click here to go to the Canva public view link for the Portfolio Sitemap](https://www.canva.com/design/DAGG64AlKZ4/w3qsl1A4A7-sUO23D39DLQ/view?utm_content=DAGG64AlKZ4&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+
+<b>NOTE:</b> The sitemap only covers links within the content of each page. All <u>internal</u> links include a navigation bar in both the header and footer to allow the user to switch to any of the core pages from any internal page (see Header & Footer Navigation note on Sitemap). 
+
 # Purpose
 The purpose of creating this website was to act as a portfolio that can be presented to potential employers to showcase the expertise and experience I have as (an aspiring) full stack web developer and IT professional. This involved providing information regarding my skill set, expertise and qualifications through:
 - Work Experience (Link to Resume/CV)
