@@ -162,9 +162,9 @@ With all the above, the aesthetic of the website aims to provide the idea to the
 
 ![Mobile - Blog 3 Page](./docs/wireframes-mobile/Mobile%205%20-%20Blog%203.png)
 
-![Mobile - Blog 4 Page](./docs/wireframes-mobile/Mobile%204%20-%20Blog%202.png)
+![Mobile - Blog 4 Page](./docs/wireframes-mobile/Mobile%206%20-%20Blog%204.png)
 
-![Mobile - Blog 5 Page](./docs/wireframes-mobile/Mobile%205%20-%20Blog%203.png)
+![Mobile - Blog 5 Page](./docs/wireframes-mobile/Mobile%207%20-%20Blog%205.png)
 
 ![Mobile - Projects Page](./docs/wireframes-mobile/Mobile%208%20-%20Projects.png)
 
@@ -191,7 +191,7 @@ With all the above, the aesthetic of the website aims to provide the idea to the
 
 ![Tablet - Blog 5 Page](./docs/wireframes-tablet/Tablet%207%20-%20Blog%205.png)
 
-![Tablet - Projects Page](./docs/wireframes-mobile/Mobile%208%20-%20Projects.png)
+![Tablet - Projects Page](./docs/wireframes-tablet/Tablet%208%20-%20Projects.png)
 
 ![Tablet - Project 1 Page](./docs/wireframes-tablet/Tablet%209%20-%20Project%201.png)
 
