@@ -44,6 +44,7 @@ main {
     text-decoration: none;
     cursor: pointer;
     transition: 0.1s ease-in-out;
+    display: inline-block;
 }
 
 /* Add transformation and text-shadow when hover over logo */
