@@ -17,7 +17,7 @@ The tech stack used to produce this portfolio includes the following:
 
 Please use the links below to access the Portfolio Website & respective GitHub Repository:
 
-- [Click here to go to the published portfolio website](https://hendric-widjaja-t1a2-portfolio.netlify.app/)
+- [Click here to go to the published portfolio website](https://hendric-widjaja.netlify.app/)
 - [Click here to go to the GitHub repository for HendricWidjaja_T1A2](https://github.com/hendricwidjaja/HendricWidjaja_T1A2)
 
 Please use the links below to view the wireframes for the Portfolio Website (via Figma).
