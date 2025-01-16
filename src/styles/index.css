@@ -91,6 +91,11 @@ header {
     text-decoration: underline;
 }
 
+#new-website {
+    font-family:var(--font-secondary), sans-serif;
+    color: red
+}
+
 /* Remove "home" nav item when viewport is 450px or less. User can still use "logo" to navigate home */
 @media screen and (max-width: 450px) {
     #nav-items a:first-child {
