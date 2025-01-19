@@ -58,6 +58,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 16px;
+
 /* If max width to nav bar to be applied, uncomment below */
     /* max-width: 1400px;
     margin: auto; */
@@ -93,7 +95,14 @@ header {
 
 #new-website {
     font-family:var(--font-secondary), sans-serif;
-    color: red
+    display: block;
+    text-align: center;
+    background-color: red;
+    color: white;
+    padding: 4px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
 }
 
 /* Remove "home" nav item when viewport is 450px or less. User can still use "logo" to navigate home */
