@@ -65,6 +65,13 @@ header {
     margin: auto; */
 }
 
+@media screen and (max-width: 605px) {
+    header {
+        margin-top: 32px;
+    }
+    
+}
+
 /* Styling for nav items. Layout row, aligned with gap and padding */
 #nav-items {
     font-family:var(--font-heading), sans-serif;
@@ -93,6 +100,7 @@ header {
     text-decoration: underline;
 }
 
+/* Styles alert notification for updated website link fixed to top of each page */
 #new-website {
     font-family:var(--font-secondary), sans-serif;
     display: block;
